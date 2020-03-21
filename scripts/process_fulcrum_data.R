@@ -204,14 +204,14 @@ df2 <- readr::read_csv("data/fulcrum/nematode_isolation_s_labeled_plates.csv") %
 ###################################################################
 
 # #only need to run once to get altitudes.
-# options(geonamesUsername="katiesevans")
-# altitudes <- df1 %>%
-#   dplyr::ungroup() %>%
-#   dplyr::select(c_label, collection_latitude, collection_longitude) %>%
-#   dplyr::rowwise() %>%
-#   # Use collection_latitidue and collection_longitude to find altitudes. Note, these lat and longs should be spot checked to ensure proper collection locations.
-#   dplyr::mutate(geonames_altitude = geonames::GNsrtm3(collection_latitude, collection_longitude)$srtm3) %>%
-#   dplyr::ungroup()
+#  options(geonamesUsername="katiesevans")
+#  altitudes <- df1 %>%
+#    dplyr::ungroup() %>%
+#    dplyr::select(c_label, collection_latitude, collection_longitude) %>%
+#    dplyr::rowwise() %>%
+#    # Use collection_latitidue and collection_longitude to find altitudes. Note, these lat and longs should be spot checked to ensure proper collection locations.
+#    dplyr::mutate(geonames_altitude = geonames::GNsrtm3(collection_latitude, collection_longitude)$srtm3) %>%
+#    dplyr::ungroup()
 # 
 # save(altitudes, file = "data/fulcrum/altitude.Rda")
 
