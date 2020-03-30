@@ -122,8 +122,7 @@ df1 <- dplyr::full_join(isolation, collection, by = c("c_label_id" = "fulcrum_id
   dplyr::rename(collection_fulcrum_latitude = latitude, collection_fulcrum_longitude = longitude) %>%
   dplyr::select(c_label,
                 everything(),
-                -c_label_id,
-                -sample_photo_url) %>%
+                -c_label_id) %>% #-sample_photo_url: we used to remove this but it's helpful
   # Join position data from exif by sample_photo. in some cases there is not position data from the photos
   dplyr::left_join(exif) %>%
   # Create flag to track if lat and long come from record or photo
@@ -150,7 +149,6 @@ df1 <- dplyr::full_join(isolation, collection, by = c("c_label_id" = "fulcrum_id
   dplyr::rename(collection_latitude = latitude,
                 collection_longitude = longitude,
                 collection_local_time = time)
-
 
 ####################################################################
 ###      (OPTIONAL) CORRECT DUPLICATE ISOLATIONS (OPTIONAL)      ###
@@ -485,8 +483,7 @@ df5 <- df4 %>%
                 substrate,
                 substrate_other,
                 substrate_notes,
-                sample_photo,
-                sample_photo_caption,
+                sample_photo_url,
                 gridsect,
                 gridsect_index,
                 grid_sect_direction,
@@ -539,9 +536,9 @@ df5 <- df4 %>%
 ### 13: Export processed data                                   ###
 ###################################################################
 # temp assign df5 to fulcrum_dat
-fulcrum_dat <- df5
+`2020FebruaryAustralia_fulcrum` <- df5
 # export R dataframe
-save(file = "data/fulcrum/fulcrum_dat.Rda", fulcrum_dat)
+save(file = "data/fulcrum/2020FebruaryAustralia_fulcrum.Rda", '2020FebruaryAustralia_fulcrum')
 
 ###################################################################
 ### 13: project specific report                                 ###

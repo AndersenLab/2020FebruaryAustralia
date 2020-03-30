@@ -31,8 +31,10 @@ knitr::opts_knit$set(root.dir = '..')
 
 ```{r, echo=F, warning = F, message=F}
 # load fulcrum data
-load('data/fulcrum/fulcrum_dat.Rda')
+load('data/fulcrum/2020FebruaryAustralia_fulcrum.Rda')
 
+fulcrum_dat <- `2020FebruaryAustralia_fulcrum`
+rm(`2020FebruaryAustralia_fulcrum`)
 #################################################
 ### set color palettes                        ###
 #################################################
@@ -783,8 +785,7 @@ target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(
 
 target_map
 ```
-<br> <font color="darkorange">*Orange points*</font> are C. tribulationis (16 isolations from 9 collections).
-<br> Zoom to see all 9 collections.
+<br> <font color="darkorange">*Orange points*</font> are C. tribulationis.
 
 ### Target species map
 ```{r, echo=F, warning = F, message=F}
@@ -874,9 +875,9 @@ target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(
 
 target_map
 ```
-<br> <font color="darkred">*Red points*</font> are C. elegans (82 isolations from 25 collections).
-<br> <font color="darkblue">*Blue points*</font> are C. briggsae (37 isolations from 16 collections).
-<br> <font color="darkorange">*Orange points*</font> are C. tribulationis (16 isolations from 9 collections).
+<br> <font color="darkred">*Red points*</font> are C. elegans.
+<br> <font color="darkblue">*Blue points*</font> are C. briggsae.
+<br> <font color="darkorange">*Orange points*</font> are C. tribulationis.
 <br> Zoom to see all collections.
 
 ### Possible new species map
