@@ -1,7 +1,7 @@
 ---
 title: "2019DecemberHawaii_report"
 author: "Tim C."
-date: "01/15/2020"
+date: "03/21/2020"
 output:
   html_document:
     toc: true
@@ -38,7 +38,7 @@ load('data/fulcrum/fulcrum_dat.Rda')
 #################################################
 species_palette <- c("C. elegans" = "#BE0032", #7
                      "C. oiwi" =  "#875692", #4 
-                     "C. tropicalis" = "#F38400", #5 
+                     "C. tribulationis" = "#F38400", #5 
                      "Panagrolaimus sp." = "#C2B280", #8
                      "Oscheius sp." = "#F3C300", #3
                      "C. briggsae" = "#A1CAF1", #6 
@@ -239,128 +239,125 @@ knitr::kable(personnel_isolators)
 ```
 <br>
 
-### Project Overview
-```{r, echo=F, warning = F, message=F, fig.width=11, fig.height=8}
-# setup overview plot groups
-overview_plot_df <- fulcrum_dat %>%
-  dplyr::filter(!is.na(collection_id)) %>%
-  dplyr::mutate(collection_type = ifelse(worms_on_sample %in% c("No", "?"), "No Nematode",
-                                   ifelse(worms_on_sample == "Tracks", "Tracks only",
-                                          ifelse(worms_on_sample == "Yes" & is.na(pcr_product_its2), "Not genotyped",
-                                                 ifelse(worms_on_sample == "Yes" & pcr_product_its2 == 0, "PCR -",
-                                                       ifelse(species_id %in% c("Chabertia ovina",
-                                                                                "Choriorhabditis cristata",
-                                                                                "Choriorhabditis sp.",
-                                                                                "Heterhabditis zealandica",
-                                                                                "Mesorhabditis sp.",
-                                                                                "no match",
-                                                                                "C. kamaaina",
-                                                                                "Rhabditis terricola",
-                                                                                "Rhanditis tericola",
-                                                                                "Teratorhabditis sp.",
-                                                                                "Unknown",
-                                                                                "unknown",
-                                                                                "Oscheius sp.",
-                                                                                "Panagrolaimus sp.",
-                                                                                "O. sp. AH13",
-                                                                                "O. sp",
-"H. bacteriaphora",
-"O. tipulae",
-"Rhabditella axei",
-"Chryseobacterium indologenes",
-"Mesorhabditis",
-"Troglostrongylus brevior",
-"Auanema freiburgensis",
-"Mesorhabditis belari",
-"O. sp.",
-"O. myriophilus",
-"No amplification",
-"No significance",
-"C. sp. 21",
-"Caenorhabditis sp. p LS-2018",
-"C. plicata",
-                                                                                "-",
-                                                                                NA,
-                                                                                "NA"
-                                                                                ),
-                                                              "Other PCR +", species_id)))))) %>%
-  dplyr::select(collection_id, collection_type, collection_island, species_id, pcr_product_its2, worms_on_sample, collection_longitude, collection_latitude) %>%
-  dplyr::distinct(collection_id, collection_type, .keep_all=T) %>% 
-  dplyr::group_by(collection_id) %>%
-  dplyr::mutate(multiple_type = ifelse(n() > 1, "yes", "no")) %>%
-  dplyr::ungroup() %>%
-  dplyr::mutate(collection_type = forcats::as_factor(collection_type),
-                collection_type = forcats::fct_relevel(collection_type,
-                                                       "C. elegans",
-                                                       "C. oiwi",
-                                                       "C. tropicalis",
-                                                       "C. briggsae",
-                                                       "Other PCR +",
-                                                       "PCR -",
-                                                       "Not genotyped",
-                                                       "Tracks only",
-                                                       "No Nematode")) %>%
-  dplyr::arrange(collection_type) %>% # arrange sets order for collection_id with multiples so highest priority collection type is on top
-  dplyr::distinct(collection_id, .keep_all = T) %>% # selects highest priority collection type from a c-label with multiple collection types on it
-  dplyr::arrange(desc(collection_type)) %>% # reorders collection_id so highest priority collections are plotted on top
-  dplyr::filter(!is.na(collection_id)) # remove any NAs in collection _id
+<!-- ### Project Overview -->
+<!-- ```{r, echo=F, warning = F, message=F, fig.width=11, fig.height=8} -->
+<!-- # setup overview plot groups -->
+<!-- overview_plot_df <- fulcrum_dat %>% -->
+<!--   dplyr::filter(!is.na(collection_id)) %>% -->
+<!--   dplyr::mutate(collection_type = ifelse(worms_on_sample %in% c("No", "?"), "No Nematode", -->
+<!--                                    ifelse(worms_on_sample == "Tracks", "Tracks only", -->
+<!--                                           ifelse(worms_on_sample == "Yes" & is.na(pcr_product_its2), "Not genotyped", -->
+<!--                                                  ifelse(worms_on_sample == "Yes" & pcr_product_its2 == 0, "PCR -", -->
+<!--                                                        ifelse(species_id %in% c("Chabertia ovina", -->
+<!--                                                                                 "Choriorhabditis cristata", -->
+<!--                                                                                 "Choriorhabditis sp.", -->
+<!--                                                                                 "Heterhabditis zealandica", -->
+<!--                                                                                 "Mesorhabditis sp.", -->
+<!--                                                                                 "no match", -->
+<!--                                                                                 "C. kamaaina", -->
+<!--                                                                                 "Rhabditis terricola", -->
+<!--                                                                                 "Rhanditis tericola", -->
+<!--                                                                                 "Teratorhabditis sp.", -->
+<!--                                                                                 "Unknown", -->
+<!--                                                                                 "unknown", -->
+<!--                                                                                 "Oscheius sp.", -->
+<!--                                                                                 "Panagrolaimus sp.", -->
+<!--                                                                                 "O. sp. AH13", -->
+<!--                                                                                 "O. sp", -->
+<!-- "H. bacteriaphora", -->
+<!-- "O. tipulae", -->
+<!-- "Rhabditella axei", -->
+<!-- "Chryseobacterium indologenes", -->
+<!-- "Mesorhabditis", -->
+<!-- "Troglostrongylus brevior", -->
+<!-- "Auanema freiburgensis", -->
+<!-- "Mesorhabditis belari", -->
+<!-- "O. sp.", -->
+<!-- "O. myriophilus", -->
+<!-- "No amplification", -->
+<!-- "No significance", -->
+<!-- "C. sp. 21", -->
+<!-- "Caenorhabditis sp. p LS-2018", -->
+<!-- "C. plicata", -->
+<!--                                                                                 "-", -->
+<!--                                                                                 NA, -->
+<!--                                                                                 "NA" -->
+<!--                                                                                 ), -->
+<!--                                                               "Other PCR +", species_id)))))) %>% -->
+<!--   dplyr::select(collection_id, collection_type, species_id, pcr_product_its2, worms_on_sample, collection_longitude, collection_latitude) %>% -->
+<!--   dplyr::distinct(collection_id, collection_type, .keep_all=T) %>%  -->
+<!--   dplyr::group_by(collection_id) %>% -->
+<!--   dplyr::mutate(multiple_type = ifelse(n() > 1, "yes", "no")) %>% -->
+<!--   dplyr::ungroup() %>% -->
+<!--   dplyr::mutate(collection_type = forcats::as_factor(collection_type), -->
+<!--                 collection_type = forcats::fct_relevel(collection_type, -->
+<!--                                                        "C. elegans", -->
+<!--                                                        "C. tribulationis", -->
+<!--                                                        "C. briggsae", -->
+<!--                                                        "Other PCR +", -->
+<!--                                                        "PCR -", -->
+<!--                                                        "Not genotyped", -->
+<!--                                                        "Tracks only", -->
+<!--                                                        "No Nematode")) %>% -->
+<!--   dplyr::arrange(collection_type) %>% # arrange sets order for collection_id with multiples so highest priority collection type is on top -->
+<!--   dplyr::distinct(collection_id, .keep_all = T) %>% # selects highest priority collection type from a c-label with multiple collection types on it -->
+<!--   dplyr::arrange(desc(collection_type)) %>% # reorders collection_id so highest priority collections are plotted on top -->
+<!--   dplyr::filter(!is.na(collection_id)) # remove any NAs in collection _id -->
 
-####################################################
-#  Bar chart inset                   # 
-####################################################
-# Plot stacked bar chart
-bar_chart <- overview_plot_df %>%
-  dplyr::group_by(collection_type, collection_island) %>%
-  dplyr::mutate(collections_per_island = n()) %>%
-  dplyr::ungroup() %>%
-  dplyr::group_by(collection_island) %>%
-  dplyr::mutate(total_collections = n(), perc_class_island = collections_per_island / total_collections * 100) %>%
-  dplyr::arrange(total_collections) %>%
-  #dplyr::select(fixed_substrate, plot_class, total_substrates, perc_worm_sub, worm_per_substrate) %>%
-  dplyr::ungroup() %>%
-  dplyr::distinct(collection_type, collection_island, .keep_all = T) %>%
-  dplyr::mutate(collection_island = factor(collection_island, levels = names(island_palette))) %>%
-  dplyr::mutate(collection_type = factor(collection_type, levels = c("No Nematode", "Tracks only", "Not genotyped", "PCR -", "Other PCR +", "C. briggsae", "C. tropicalis", "C. oiwi", "C. elegans")))
+<!-- #################################################### -->
+<!-- #  Bar chart inset                   #  -->
+<!-- #################################################### -->
+<!-- # Plot stacked bar chart -->
+<!-- bar_chart <- overview_plot_df %>% -->
+<!--   dplyr::mutate(total_collection_n = n()) %>% -->
+<!--   dplyr::group_by(collection_type) %>% -->
+<!--   dplyr::mutate(total_collection_in_type = n()) %>% -->
+<!--   dplyr::arrange(total_collection_in_type) %>% -->
+<!--   dplyr::mutate(perc_collection_type =  (total_collection_in_type/total_collection_n)*100) %>% -->
+<!--   #dplyr::select(fixed_substrate, plot_class, total_substrates, perc_worm_sub, worm_per_substrate) %>% -->
+<!--   dplyr::ungroup() %>% -->
+<!--   dplyr::distinct(collection_type, .keep_all = T) %>% -->
+<!--   dplyr::mutate(collection_type = factor(collection_type, levels = c("No Nematode", "Tracks only", "Not genotyped", "PCR -", "Other PCR +", "C. briggsae", "C. tribulationis", "C. elegans"))) -->
 
-# Fig2B plot for rhabditida positive collections
-plot_bar_chart <- ggplot(data = bar_chart) +
-  geom_bar(stat = "identity", aes(x = factor(collection_island), y = perc_class_island, fill = collection_type), colour = "black") +
-  scale_fill_manual(values=c(species_palette)) +
-  theme_bw() +
-  theme(axis.title = element_text(size = 8, color = "black"),
-        axis.text = element_text(size = 8, color = "black"),
-        legend.position = "bottom",
-        plot.margin = unit(c(0,0,0,0), units = "cm")) + 
-  #legend.text = element_text(size = 8, color = "black")) +
-  labs(fill = "", x = "", y = "Percentage of all collections") +
-  geom_text(aes(x=collection_island, y=102, label=paste0("n=",total_collections)), 
-            position = position_dodge(width=1), size = 2.5) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  scale_y_continuous(breaks = c(25, 50, 75, 100), limits = c(0, 102))
+<!-- # Fig2B plot for rhabditida positive collections -->
+<!-- plot_bar_chart <- ggplot(data = bar_chart) + -->
+<!--   geom_bar(stat = "identity", aes(x = total_collection_n, y = perc_collection_type, fill = collection_type), colour = "black") + -->
+<!--   scale_fill_manual(values=c(species_palette)) + -->
+<!--   theme_bw() + -->
+<!--   theme(axis.title = element_text(size = 8, color = "black"), -->
+<!--         axis.text = element_text(size = 8, color = "black"), -->
+<!--         legend.position = "bottom", -->
+<!--         plot.margin = unit(c(0,0,0,0), units = "cm")) +  -->
+<!--   #legend.text = element_text(size = 8, color = "black")) + -->
+<!--   labs(fill = "", x = "", y = "Percentage of all collections") + -->
+<!--   geom_text(aes(x=total_collection_n, y=102, label=paste0("n=",total_collection_n)),  -->
+<!--             position = position_dodge(width=1), size = 2.5) + -->
+<!--   guides(fill = guide_legend(reverse = TRUE)) + -->
+<!--   scale_y_continuous(breaks = c(25, 50, 75, 100), limits = c(0, 102)) -->
 
-plot_bar_chart_no_legend <- plot_bar_chart +
-  theme(legend.position="none",
-        plot.margin = unit(c(0,0,0,0), units = "cm"))
+<!-- plot_bar_chart_no_legend <- plot_bar_chart + -->
+<!--   theme(legend.position="none", -->
+<!--         plot.margin = unit(c(0,0,0,0), units = "cm")) -->
 
-plot_bar_chart_legend <- cowplot::plot_grid(cowplot::get_legend(plot_bar_chart))
+<!-- plot_bar_chart_legend <- cowplot::plot_grid(cowplot::get_legend(plot_bar_chart)) -->
 
-# # Make map overview plot
-# overview_plot <- map_overview(plot_bar_chart_no_legend, plot_bar_chart_legend, overview_plot_df,
-#                                c(geom_point(aes(x=collection_longitude,
-#                                                 y=collection_latitude,
-#                                                 fill=collection_type,
-#                                                 size = 1),
-#                                             color="black",
-#                                             shape=21,
-#                                             stroke = 0.5
-#                                ),
-#                                scale_fill_manual("species", values = species_palette)
-#                                ),
-#                                face="italic"
-# )
-# overview_plot
-plot_bar_chart
-```
+<!-- # # Make map overview plot -->
+<!-- # overview_plot <- map_overview(plot_bar_chart_no_legend, plot_bar_chart_legend, overview_plot_df, -->
+<!-- #                                c(geom_point(aes(x=collection_longitude, -->
+<!-- #                                                 y=collection_latitude, -->
+<!-- #                                                 fill=collection_type, -->
+<!-- #                                                 size = 1), -->
+<!-- #                                             color="black", -->
+<!-- #                                             shape=21, -->
+<!-- #                                             stroke = 0.5 -->
+<!-- #                                ), -->
+<!-- #                                scale_fill_manual("species", values = species_palette) -->
+<!-- #                                ), -->
+<!-- #                                face="italic" -->
+<!-- # ) -->
+<!-- # overview_plot -->
+<!-- plot_bar_chart -->
+<!-- ``` -->
 
 ### Collection Report
 ```{r, echo=F, warning = F, message=F}
@@ -677,7 +674,6 @@ knitr::kable(`duplication in genotyping sheet`, caption = glue::glue("{n_duplica
 ```
 <br> These dataframes are filtered to show the duplications in the raw data from fulcrum or the genotyping sheet. If the dataframe are empty there is no duplication.<br>
 
-
 ### Location Review
 ```{r, echo=F, warning = F, message=F}
 # Make df for diagnostic plotting
@@ -696,94 +692,192 @@ Use this map to manually check latitidue and longitude of collection records.
 <br> <font color="darkgreen">*Green points*</font> are located using `photo` lat,long and are usually accurate.
 
 
+### C. tribulationis species map
+```{r, echo=F, warning = F, message=F}
+# Target species map function
+#Map_collection function for reviewing collection locations
+map_target_species <- function(df, color_use) {
+
+  icos <- iconList(
+    red = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/red.svg"),
+      iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+    ),
+    orange = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/orange.svg"),
+     iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+  ),
+    blue = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/blue.svg"),
+      iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+  )
+)
+  df <- dplyr::filter(df, !is.na(df[[color_use]])) %>%
+    dplyr::mutate(substrate=ifelse(is.na(substrate), "", substrate)) %>%
+    dplyr::arrange(species_id)
+
+  #print(df)
+
+
+  attach(df)
+  leaflet::leaflet(data = df, width = "100%", options = list(zoomControl = T)) %>%
+    leaflet::addTiles(
+      paste0(
+        "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png",
+        jsonlite::read_json("data/thunderforest.json")$key)
+    ) %>%
+    leaflet::addMarkers(~collection_longitude,
+                        ~collection_latitude,
+                        popup = glue::glue("<h2>{collection_id}</h2><hr />
+                                           <strong>trail:</strong> {collection_trail}<br />
+                                           <strong>collection uplaoded by:</strong> {collection_by}<br />
+                                           <strong>latitidue, longitude:</strong> {format(round(collection_latitude, 6), nsmall = 6)}, {format(round(collection_longitude, 6), nsmall = 6)}<br />
+                                           <strong>location:</strong> {collection_location}<br />
+                                           <strong>substrate:</strong> {substrate}<br />
+                                           <strong>substrate other:</strong>{substrate_other}<br />
+                                           <strong>substrate notes:</strong> {substrate_notes}<br />
+                                           <strong>C. tribulationis:</strong> {`C. tribulationis count`}<br /><br />"),
+                        popupOptions(maxWidth = 500),
+                        icon = icos[ df[[color_use]] ] )
+
+  # temp remove other target species counts
+    #<strong>C. elegans:</strong> {`C. elegans count`}<br />
+    #<strong>C. briggsae:</strong> {`C. briggsae count`}<br />
+
+  
+  #htmlwidgets::saveWidget(m, tempfile(), selfcontained = FALSE)
+  #webshot::webshot("temp.html", file = "map.png",
+  #        cliprect = "viewport", vwidth = 1000, vheight = 1000)
+}
+
+# Make df for diagnostic plotting
+target_df <- fulcrum_dat %>%
+  dplyr::filter(!is.na(collection_id)) %>%
+  dplyr::filter(species_id %in% c("C. tribulationis")) %>% #"C. elegans",  "C. briggsae", 
+  dplyr::group_by(collection_id, species_id) %>%
+  dplyr::mutate(species_count = n()) %>%
+  dplyr::mutate(#`C. elegans count` = ifelse(species_id == "C. elegans", species_count, 0),
+                #`C. briggsae count` = ifelse(species_id == "C. briggsae", species_count, 0),
+                `C. tribulationis count` = ifelse(species_id == "C. tribulationis", species_count, 0)) %>%
+  dplyr::ungroup() %>%
+  dplyr::distinct(collection_id, species_id, .keep_all =T) %>%
+  dplyr::arrange(collection_id, desc(species_count)) %>%
+  dplyr::group_by(collection_id) %>%
+  dplyr::mutate(#`C. elegans count` = sum(`C. elegans count`),
+                #`C. briggsae count` = sum(`C. briggsae count`),
+                `C. tribulationis count` = sum(`C. tribulationis count`)) %>%
+  dplyr::ungroup() %>%
+  dplyr::distinct(collection_id, .keep_all =T)
+
+
+# map collection for diagnostic
+target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(species_id == "C. elegans" ~ "red",
+                                                                                species_id == "C. briggsae" ~ "blue",
+                                                                                species_id == "C. tribulationis" ~ "orange")), "color")
+
+target_map
+```
+<br> <font color="darkorange">*Orange points*</font> are C. tribulationis (16 isolations from 9 collections).
+<br> Zoom to see all 9 collections.
+
 ### Target species map
 ```{r, echo=F, warning = F, message=F}
 # Target species map function
-# Map_collection function for reviewing collection locations
-# map_target_species <- function(df, color_use) {
-#   
-#   icos <- iconList(
-#     red = makeIcon(
-#       iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/red.svg"),
-#       iconWidth = 15, iconHeight = 15,
-#       popupAnchorX = 0.001, popupAnchorY = -15,
-#       iconAnchorX = 15/2, iconAnchorY = 15
-#     ),
-#     orange = makeIcon(
-#       iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/orange.svg"),
-#      iconWidth = 15, iconHeight = 15,
-#       popupAnchorX = 0.001, popupAnchorY = -15,
-#       iconAnchorX = 15/2, iconAnchorY = 15
-#   ),
-#     blue = makeIcon(
-#       iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/blue.svg"),
-#       iconWidth = 15, iconHeight = 15,
-#       popupAnchorX = 0.001, popupAnchorY = -15,
-#       iconAnchorX = 15/2, iconAnchorY = 15
-#   )
-# )
-#   df <- dplyr::filter(df, !is.na(df[[color_use]])) %>%
-#     dplyr::mutate(substrate=ifelse(is.na(substrate), "", substrate)) %>%
-#     dplyr::arrange(species_id)
-#   
-#   #print(df)
-#  
-#   
-#   attach(df)
-#   leaflet::leaflet(data = df, width = "100%", options = list(zoomControl = T)) %>% 
-#     leaflet::addTiles( 
-#       paste0( 
-#         "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png",
-#         jsonlite::read_json("data/thunderforest.json")$key)  
-#     ) %>%
-#     leaflet::addMarkers(~collection_longitude,
-#                         ~collection_latitude,
-#                         popup = glue::glue("<h2>{collection_id}</h2><hr />
-#                                            <strong>trail:</strong> {collection_trail}<br /> 
-#                                            <strong>collection uplaoded by:</strong> {collection_by}<br />
-#                                            <strong>latitidue, longitude:</strong> {format(round(collection_latitude, 6), nsmall = 6)}, {format(round(collection_longitude, 6), nsmall = 6)}<br />
-#                                            <strong>location:</strong> {collection_location}<br />
-#                                            <strong>substrate:</strong> {substrate}<br />
-#                                            <strong>substrate other:</strong>{substrate_other}<br />
-#                                            <strong>substrate notes:</strong> {substrate_notes}<br />
-#                                            <strong>C. elegans:</strong> {`C. elegans count`}<br />
-#                                            <strong>C. briggsae:</strong> {`C. briggsae count`}<br />
-#                                            <strong>C. tropicalis:</strong> {`C. tropicalis count`}<br /><br />"),
-#                         popupOptions(maxWidth = 500),
-#                         icon = icos[ df[[color_use]] ] )
-#   
-#   #htmlwidgets::saveWidget(m, tempfile(), selfcontained = FALSE)
-#   #webshot::webshot("temp.html", file = "map.png",
-#   #        cliprect = "viewport", vwidth = 1000, vheight = 1000)
-# }
-# 
-# # Make df for diagnostic plotting
-# target_df <- fulcrum_dat %>%
-#   dplyr::filter(!is.na(collection_id)) %>%
-#   dplyr::filter(species_id %in% c("C. elegans", "C. briggsae", "C. tropicalis")) %>%
-#   dplyr::group_by(collection_id, species_id) %>%
-#   dplyr::mutate(species_count = n()) %>%
-#   dplyr::mutate(`C. elegans count` = ifelse(species_id == "C. elegans", species_count, 0),
-#                 `C. briggsae count` = ifelse(species_id == "C. briggsae", species_count, 0),
-#                 `C. tropicalis count` = ifelse(species_id == "C. tropicalis", species_count, 0)) %>%
-#   dplyr::ungroup() %>%
-#   dplyr::distinct(collection_id, species_id, .keep_all =T) %>%
-#   dplyr::arrange(collection_id, desc(species_count)) %>%
-#   dplyr::group_by(collection_id) %>%
-#   dplyr::mutate(`C. elegans count` = sum(`C. elegans count`),
-#                 `C. briggsae count` = sum(`C. briggsae count`),
-#                 `C. tropicalis count` = sum(`C. tropicalis count`)) %>%
-#   dplyr::ungroup() %>%
-#   dplyr::distinct(collection_id, .keep_all =T)
-#   
-# 
-# # map collection for diagnostic
-# target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(species_id == "C. elegans" ~ "red",
-#                                                                                 species_id == "C. briggsae" ~ "blue",
-#                                                                                 species_id == "C. tropicalis" ~ "orange")), "color")
-# 
-# target_map
+#Map_collection function for reviewing collection locations
+map_target_species <- function(df, color_use) {
+
+  icos <- iconList(
+    red = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/red.svg"),
+      iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+    ),
+    orange = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/orange.svg"),
+     iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+  ),
+    blue = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/blue.svg"),
+      iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+  )
+)
+  df <- dplyr::filter(df, !is.na(df[[color_use]])) %>%
+    dplyr::mutate(substrate=ifelse(is.na(substrate), "", substrate)) %>%
+    dplyr::arrange(species_id)
+
+  #print(df)
+
+
+  attach(df)
+  leaflet::leaflet(data = df, width = "100%", options = list(zoomControl = T)) %>%
+    leaflet::addTiles(
+      paste0(
+        "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png",
+        jsonlite::read_json("data/thunderforest.json")$key)
+    ) %>%
+    leaflet::addMarkers(~collection_longitude,
+                        ~collection_latitude,
+                        popup = glue::glue("<h2>{collection_id}</h2><hr />
+                                           <strong>trail:</strong> {collection_trail}<br />
+                                           <strong>collection uplaoded by:</strong> {collection_by}<br />
+                                           <strong>latitidue, longitude:</strong> {format(round(collection_latitude, 6), nsmall = 6)}, {format(round(collection_longitude, 6), nsmall = 6)}<br />
+                                           <strong>location:</strong> {collection_location}<br />
+                                           <strong>substrate:</strong> {substrate}<br />
+                                           <strong>substrate other:</strong>{substrate_other}<br />
+                                           <strong>substrate notes:</strong> {substrate_notes}<br />
+                                           <strong>C. elegans:</strong> {`C. elegans count`}<br />
+                                           <strong>C. briggsae:</strong> {`C. briggsae count`}<br />
+                                           <strong>C. tribulationis:</strong> {`C. tribulationis count`}<br /><br />"),
+                        popupOptions(maxWidth = 500),
+                        icon = icos[ df[[color_use]] ] )
+  
+  #htmlwidgets::saveWidget(m, tempfile(), selfcontained = FALSE)
+  #webshot::webshot("temp.html", file = "map.png",
+  #        cliprect = "viewport", vwidth = 1000, vheight = 1000)
+}
+
+# Make df for diagnostic plotting
+target_df <- fulcrum_dat %>%
+  dplyr::filter(!is.na(collection_id)) %>%
+  dplyr::filter(species_id %in% c("C. elegans",  "C. briggsae", "C. tribulationis")) %>% 
+  dplyr::group_by(collection_id, species_id) %>%
+  dplyr::mutate(species_count = n()) %>%
+  dplyr::mutate(`C. elegans count` = ifelse(species_id == "C. elegans", species_count, 0),
+                `C. briggsae count` = ifelse(species_id == "C. briggsae", species_count, 0),
+                `C. tribulationis count` = ifelse(species_id == "C. tribulationis", species_count, 0)) %>%
+  dplyr::ungroup() %>%
+  dplyr::distinct(collection_id, species_id, .keep_all =T) %>%
+  dplyr::arrange(collection_id, desc(species_count)) %>%
+  dplyr::group_by(collection_id) %>%
+  dplyr::mutate(`C. elegans count` = sum(`C. elegans count`),
+                `C. briggsae count` = sum(`C. briggsae count`),
+                `C. tribulationis count` = sum(`C. tribulationis count`)) %>%
+  dplyr::ungroup() %>%
+  dplyr::distinct(collection_id, .keep_all =T)
+
+
+# map collection for diagnostic
+target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(species_id == "C. elegans" ~ "red",
+                                                                                species_id == "C. briggsae" ~ "blue",
+                                                                                species_id == "C. tribulationis" ~ "orange")), "color")
+
+target_map
 ```
+<br> <font color="darkred">*Red points*</font> are C. elegans (82 isolations from 25 collections).
+<br> <font color="darkblue">*Blue points*</font> are C. briggsae (37 isolations from 16 collections).
+<br> <font color="darkorange">*Orange points*</font> are C. tribulationis (16 isolations from 9 collections).
+<br> Zoom to see all collections.
 
 ### Possible new species map
 ```{r, echo=F, warning = F, message=F}
