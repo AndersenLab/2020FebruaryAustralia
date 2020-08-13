@@ -1,7 +1,7 @@
 ---
-title: "2019DecemberHawaii_report"
+title: "2020FebruaryAustralia_report"
 author: "Tim C."
-date: "03/21/2020"
+date: "05/18/2020"
 output:
   html_document:
     toc: true
@@ -31,10 +31,10 @@ knitr::opts_knit$set(root.dir = '..')
 
 ```{r, echo=F, warning = F, message=F}
 # load fulcrum data
-load('data/fulcrum/2020FebruaryAustralia_fulcrum.Rda')
+load('data/fulcrum/2020FebruaryAustralia_fulcrum_v2.Rda')
 
-fulcrum_dat <- `2020FebruaryAustralia_fulcrum`
-rm(`2020FebruaryAustralia_fulcrum`)
+fulcrum_dat <- `2020FebruaryAustralia_fulcrum_v2`
+rm(`2020FebruaryAustralia_fulcrum_v2`)
 #################################################
 ### set color palettes                        ###
 #################################################
@@ -67,6 +67,12 @@ filter_box <- function(longitude, latitude, coords) {
   between(longitude, coords[1], coords[3]) &
     between(latitude, coords[2], coords[4]) &
     !is.na(longitude)
+}
+
+# make function to catch emptys
+is.empty <- function(x, mode=NULL){
+  if (is.null(mode)) mode <- class(x)
+  identical(vector(mode,1),c(x,vector(class(x),1)))
 }
 
 # coordinates for islands. Note need to comment out islands not collected from in this list
@@ -241,126 +247,6 @@ knitr::kable(personnel_isolators)
 ```
 <br>
 
-<!-- ### Project Overview -->
-<!-- ```{r, echo=F, warning = F, message=F, fig.width=11, fig.height=8} -->
-<!-- # setup overview plot groups -->
-<!-- overview_plot_df <- fulcrum_dat %>% -->
-<!--   dplyr::filter(!is.na(collection_id)) %>% -->
-<!--   dplyr::mutate(collection_type = ifelse(worms_on_sample %in% c("No", "?"), "No Nematode", -->
-<!--                                    ifelse(worms_on_sample == "Tracks", "Tracks only", -->
-<!--                                           ifelse(worms_on_sample == "Yes" & is.na(pcr_product_its2), "Not genotyped", -->
-<!--                                                  ifelse(worms_on_sample == "Yes" & pcr_product_its2 == 0, "PCR -", -->
-<!--                                                        ifelse(species_id %in% c("Chabertia ovina", -->
-<!--                                                                                 "Choriorhabditis cristata", -->
-<!--                                                                                 "Choriorhabditis sp.", -->
-<!--                                                                                 "Heterhabditis zealandica", -->
-<!--                                                                                 "Mesorhabditis sp.", -->
-<!--                                                                                 "no match", -->
-<!--                                                                                 "C. kamaaina", -->
-<!--                                                                                 "Rhabditis terricola", -->
-<!--                                                                                 "Rhanditis tericola", -->
-<!--                                                                                 "Teratorhabditis sp.", -->
-<!--                                                                                 "Unknown", -->
-<!--                                                                                 "unknown", -->
-<!--                                                                                 "Oscheius sp.", -->
-<!--                                                                                 "Panagrolaimus sp.", -->
-<!--                                                                                 "O. sp. AH13", -->
-<!--                                                                                 "O. sp", -->
-<!-- "H. bacteriaphora", -->
-<!-- "O. tipulae", -->
-<!-- "Rhabditella axei", -->
-<!-- "Chryseobacterium indologenes", -->
-<!-- "Mesorhabditis", -->
-<!-- "Troglostrongylus brevior", -->
-<!-- "Auanema freiburgensis", -->
-<!-- "Mesorhabditis belari", -->
-<!-- "O. sp.", -->
-<!-- "O. myriophilus", -->
-<!-- "No amplification", -->
-<!-- "No significance", -->
-<!-- "C. sp. 21", -->
-<!-- "Caenorhabditis sp. p LS-2018", -->
-<!-- "C. plicata", -->
-<!--                                                                                 "-", -->
-<!--                                                                                 NA, -->
-<!--                                                                                 "NA" -->
-<!--                                                                                 ), -->
-<!--                                                               "Other PCR +", species_id)))))) %>% -->
-<!--   dplyr::select(collection_id, collection_type, species_id, pcr_product_its2, worms_on_sample, collection_longitude, collection_latitude) %>% -->
-<!--   dplyr::distinct(collection_id, collection_type, .keep_all=T) %>%  -->
-<!--   dplyr::group_by(collection_id) %>% -->
-<!--   dplyr::mutate(multiple_type = ifelse(n() > 1, "yes", "no")) %>% -->
-<!--   dplyr::ungroup() %>% -->
-<!--   dplyr::mutate(collection_type = forcats::as_factor(collection_type), -->
-<!--                 collection_type = forcats::fct_relevel(collection_type, -->
-<!--                                                        "C. elegans", -->
-<!--                                                        "C. tribulationis", -->
-<!--                                                        "C. briggsae", -->
-<!--                                                        "Other PCR +", -->
-<!--                                                        "PCR -", -->
-<!--                                                        "Not genotyped", -->
-<!--                                                        "Tracks only", -->
-<!--                                                        "No Nematode")) %>% -->
-<!--   dplyr::arrange(collection_type) %>% # arrange sets order for collection_id with multiples so highest priority collection type is on top -->
-<!--   dplyr::distinct(collection_id, .keep_all = T) %>% # selects highest priority collection type from a c-label with multiple collection types on it -->
-<!--   dplyr::arrange(desc(collection_type)) %>% # reorders collection_id so highest priority collections are plotted on top -->
-<!--   dplyr::filter(!is.na(collection_id)) # remove any NAs in collection _id -->
-
-<!-- #################################################### -->
-<!-- #  Bar chart inset                   #  -->
-<!-- #################################################### -->
-<!-- # Plot stacked bar chart -->
-<!-- bar_chart <- overview_plot_df %>% -->
-<!--   dplyr::mutate(total_collection_n = n()) %>% -->
-<!--   dplyr::group_by(collection_type) %>% -->
-<!--   dplyr::mutate(total_collection_in_type = n()) %>% -->
-<!--   dplyr::arrange(total_collection_in_type) %>% -->
-<!--   dplyr::mutate(perc_collection_type =  (total_collection_in_type/total_collection_n)*100) %>% -->
-<!--   #dplyr::select(fixed_substrate, plot_class, total_substrates, perc_worm_sub, worm_per_substrate) %>% -->
-<!--   dplyr::ungroup() %>% -->
-<!--   dplyr::distinct(collection_type, .keep_all = T) %>% -->
-<!--   dplyr::mutate(collection_type = factor(collection_type, levels = c("No Nematode", "Tracks only", "Not genotyped", "PCR -", "Other PCR +", "C. briggsae", "C. tribulationis", "C. elegans"))) -->
-
-<!-- # Fig2B plot for rhabditida positive collections -->
-<!-- plot_bar_chart <- ggplot(data = bar_chart) + -->
-<!--   geom_bar(stat = "identity", aes(x = total_collection_n, y = perc_collection_type, fill = collection_type), colour = "black") + -->
-<!--   scale_fill_manual(values=c(species_palette)) + -->
-<!--   theme_bw() + -->
-<!--   theme(axis.title = element_text(size = 8, color = "black"), -->
-<!--         axis.text = element_text(size = 8, color = "black"), -->
-<!--         legend.position = "bottom", -->
-<!--         plot.margin = unit(c(0,0,0,0), units = "cm")) +  -->
-<!--   #legend.text = element_text(size = 8, color = "black")) + -->
-<!--   labs(fill = "", x = "", y = "Percentage of all collections") + -->
-<!--   geom_text(aes(x=total_collection_n, y=102, label=paste0("n=",total_collection_n)),  -->
-<!--             position = position_dodge(width=1), size = 2.5) + -->
-<!--   guides(fill = guide_legend(reverse = TRUE)) + -->
-<!--   scale_y_continuous(breaks = c(25, 50, 75, 100), limits = c(0, 102)) -->
-
-<!-- plot_bar_chart_no_legend <- plot_bar_chart + -->
-<!--   theme(legend.position="none", -->
-<!--         plot.margin = unit(c(0,0,0,0), units = "cm")) -->
-
-<!-- plot_bar_chart_legend <- cowplot::plot_grid(cowplot::get_legend(plot_bar_chart)) -->
-
-<!-- # # Make map overview plot -->
-<!-- # overview_plot <- map_overview(plot_bar_chart_no_legend, plot_bar_chart_legend, overview_plot_df, -->
-<!-- #                                c(geom_point(aes(x=collection_longitude, -->
-<!-- #                                                 y=collection_latitude, -->
-<!-- #                                                 fill=collection_type, -->
-<!-- #                                                 size = 1), -->
-<!-- #                                             color="black", -->
-<!-- #                                             shape=21, -->
-<!-- #                                             stroke = 0.5 -->
-<!-- #                                ), -->
-<!-- #                                scale_fill_manual("species", values = species_palette) -->
-<!-- #                                ), -->
-<!-- #                                face="italic" -->
-<!-- # ) -->
-<!-- # overview_plot -->
-<!-- plot_bar_chart -->
-<!-- ``` -->
-
 ### Collection Report
 ```{r, echo=F, warning = F, message=F}
 # Find counts
@@ -375,13 +261,29 @@ collection_counts_1 <- fulcrum_dat %>%
   dplyr::distinct(worms_on_sample, .keep_all = T)
 
 # find more counts
-`total number of distinct collections` <- pull(collection_counts_1 %>% distinct(`total number of distinct collections`))
-`total number of distinct collections NAs removed` <- pull(collection_counts_1 %>% distinct(`total number of distinct collections NAs removed`))
-`collections with nematodes` <- pull(collection_counts_1 %>% dplyr::filter(worms_on_sample == "Yes") %>% distinct(`worms_on_sample_counts`))
-`collections with tracks only` <- pull(collection_counts_1 %>% dplyr::filter(worms_on_sample == "Tracks") %>% distinct(`worms_on_sample_counts`))
-`collections without nematodes`<- pull(collection_counts_1 %>% dplyr::filter(worms_on_sample == "No") %>% distinct(`worms_on_sample_counts`))
-`collections without paired isolation data`<- pull(collection_counts_1 %>% dplyr::filter(worms_on_sample == "?") %>% distinct(`worms_on_sample_counts`))
-`collections with NA for colleciton id` <- pull(fulcrum_dat %>% dplyr::filter(is.na(collection_id)) %>% dplyr::mutate(n = n()) %>% dplyr::distinct(n))
+`total number of distinct collections` <- dplyr::pull(collection_counts_1 %>% dplyr::distinct(`total number of distinct collections`))
+`total number of distinct collections NAs removed` <- dplyr::pull(collection_counts_1 %>% dplyr::distinct(`total number of distinct collections NAs removed`))
+`collections with nematodes` <- dplyr::pull(collection_counts_1 %>% dplyr::filter(worms_on_sample == "Yes") %>% dplyr::distinct(`worms_on_sample_counts`))
+`collections with tracks only` <- ifelse(is.empty(dplyr::pull(collection_counts_1 %>%
+                                                                dplyr::filter(worms_on_sample == "Tracks") %>%
+                                                                dplyr::distinct(`worms_on_sample_counts`)), "integer") == TRUE, 0,
+                                         dplyr::pull(collection_counts_1 %>%
+                                                                dplyr::filter(worms_on_sample == "Tracks") %>%
+                                                                dplyr::distinct(`worms_on_sample_counts`))) 
+`collections without nematodes`<- dplyr::pull(collection_counts_1 %>% dplyr::filter(worms_on_sample == "No") %>% dplyr::distinct(`worms_on_sample_counts`))
+`collections without paired isolation data`<- collection_counts_1 %>%
+  dplyr::filter(worms_on_sample == "?" | is.na(worms_on_sample)) %>%
+  dplyr::mutate(na_count = sum(`worms_on_sample_counts`)) %>%
+  distinct(na_count) %>%
+  pull(na_count)
+`rows with NA for colleciton id` <- ifelse(is.empty(dplyr::pull(fulcrum_dat %>%
+                                                                         dplyr::filter(is.na(collection_id)) %>%
+                                                                         dplyr::mutate(n = n()) %>%
+                                                                         dplyr::distinct(n)), "integer") == TRUE, 0,
+                                                  dplyr::pull(fulcrum_dat %>%
+                                                                dplyr::filter(is.na(collection_id)) %>%
+                                                                dplyr::mutate(n = n()) %>%
+                                                                dplyr::distinct(n)))
 
 # find duplicate c_labels
 `collections with duplicated ids` <-  fulcrum_dat %>%
@@ -393,7 +295,7 @@ collection_counts_1 <- fulcrum_dat %>%
   dplyr::mutate(duplicated = ifelse(n > 1, 1, 0)) %>%
   dplyr::mutate(num_duplicated = sum(duplicated)) %>%
   dplyr::distinct(num_duplicated) %>%
-  pull(num_duplicated)
+  dplyr::pull(num_duplicated)
 
 # Find counts for location and altitude methods
 collection_counts_2 <-  fulcrum_dat %>%
@@ -413,12 +315,37 @@ collection_counts_2 <-  fulcrum_dat %>%
   dplyr::distinct(`location method n`) %>% pull(unique(`location method n`))
 `collection percentage with loc method 'fulcrum'` <- (`collections with location method 'fulcrum'` / `total number of distinct collections NAs removed`)
 
-`collections with altitude method 'geonames'` <- collection_counts_2 %>% dplyr::filter(altitude_method == "geonames") %>%
-  dplyr::distinct(`altitude method n`) %>% pull(unique(`altitude method n`))
+`collections with altitude method 'photo'` <- ifelse(is.empty(collection_counts_2 %>% 
+                                                                  dplyr::filter(altitude_method == "photo") %>%
+                                                                  dplyr::distinct(`altitude method n`) %>%
+                                                                  dplyr::pull(unique(`altitude method n`))), 0,
+                                                       collection_counts_2 %>% 
+                                                                  dplyr::filter(altitude_method == "photo") %>%
+                                                                  dplyr::distinct(`altitude method n`) %>%
+                                                                  dplyr::pull(unique(`altitude method n`)))
+
+`collections with altitude method 'geonames'` <-  ifelse(is.empty(collection_counts_2 %>% 
+                                                                  dplyr::filter(altitude_method == "geonames") %>%
+                                                                  dplyr::distinct(`altitude method n`) %>%
+                                                                  dplyr::pull(unique(`altitude method n`))), 0,
+                                                       collection_counts_2 %>% 
+                                                                  dplyr::filter(altitude_method == "geonames") %>%
+                                                                  dplyr::distinct(`altitude method n`) %>%
+                                                                  dplyr::pull(unique(`altitude method n`)))
+
+`collections with altitude method 'fulcrum'` <- ifelse(is.empty(collection_counts_2 %>% 
+                                                                  dplyr::filter(altitude_method == "fulcrum") %>%
+                                                                  dplyr::distinct(`altitude method n`) %>%
+                                                                  dplyr::pull(unique(`altitude method n`))), 0,
+                                                       collection_counts_2 %>% 
+                                                                  dplyr::filter(altitude_method == "fulcrum") %>%
+                                                                  dplyr::distinct(`altitude method n`) %>%
+                                                                  dplyr::pull(unique(`altitude method n`)))
+
+`collection percentage with altitude method 'photo'` <- (`collections with altitude method 'photo'` / `total number of distinct collections NAs removed`)
+
 `collection percentage with altitude method 'geonames'` <- (`collections with altitude method 'geonames'` / `total number of distinct collections NAs removed`)
 
-`collections with altitude method 'fulcrum'` <- collection_counts_2 %>% dplyr::filter(altitude_method == "fulcrum") %>%
-  dplyr::distinct(`altitude method n`) %>% pull(unique(`altitude method n`))
 `collection percentage with altitude method 'fulcrum'` <- (`collections with altitude method 'fulcrum'` / `total number of distinct collections NAs removed`)
 
 # build data frame to display
@@ -431,27 +358,31 @@ collection_counts <- tibble(`total number of distinct collections`,
                 `collection percentage with tracks only` = (`collections with tracks only`/`total number of distinct collections NAs removed`),
                 `collection percentage with no worms` = (`collections without nematodes`/`total number of distinct collections NAs removed`)) %>%
   dplyr::bind_cols(list(`collections with duplicated ids`,
-                   `collections with NA for colleciton id`,
+                   `rows with NA for colleciton id`,
                    `collections without paired isolation data`,
                    `collections with location method 'photo'`,
                    `collections with location method 'fulcrum'`,
                    `collection percentage with loc method 'photo'`,
                    `collection percentage with loc method 'fulcrum'`,
+                   `collections with altitude method 'photo'`,
                    `collections with altitude method 'geonames'`,
                    `collections with altitude method 'fulcrum'`,
+                   `collection percentage with altitude method 'photo'`,
                    `collection percentage with altitude method 'geonames'`,
                    `collection percentage with altitude method 'fulcrum'`)) %>%
   dplyr::rename(`collections with duplicated ids` = V1,
-                   `collections with NA for colleciton id` = V2,
+                   `rows with NA for colleciton id` = V2,
                    `collections without paired isolation data` = V3,
                    `collections with location method 'photo'` = V4,
                    `collections with location method 'fulcrum'` = V5,
                    `collection percentage with loc method 'photo'` = V6,
                    `collection percentage with loc method 'fulcrum'` = V7,
-                   `collections with altitude method 'geonames'` = V8,
-                   `collections with altitude method 'fulcrum'` = V9,
-                   `collection percentage with altitude method 'geonames'` = V10,
-                   `collection percentage with altitude method 'fulcrum'` = V11) %>%
+                   `collections with altitude method 'photo'` = V8,
+                   `collections with altitude method 'geonames'` = V9,
+                   `collections with altitude method 'fulcrum'` = V10,
+                   `collection percentage with altitude method 'photo'` = V11,
+                   `collection percentage with altitude method 'geonames'` = V12,
+                   `collection percentage with altitude method 'fulcrum'` = V13) %>%
   tidyr::gather(`collection report`, value) %>%
   dplyr::mutate(value = as.numeric(value)) %>%
   # if percentage in type then display as percentage
@@ -519,7 +450,7 @@ isolation_counts3 <- fulcrum_dat %>%
   dplyr::mutate(value = as.character(value))
  
 `Possible new Caenorhabditis sp. isolations` <- fulcrum_dat %>%
-  dplyr::filter(possible_new_species == 1) %>%
+  dplyr::filter(possible_new_caeno_sp == 1) %>%
   dplyr::mutate(n = n()) %>%
   dplyr::distinct(n) %>%
   dplyr::pull(unique(n)) %>%
@@ -675,6 +606,18 @@ knitr::kable(`duplication in genotyping sheet`, caption = glue::glue("{n_duplica
   scroll_box(width = "100%", height = "200px")
 ```
 <br> These dataframes are filtered to show the duplications in the raw data from fulcrum or the genotyping sheet. If the dataframe are empty there is no duplication.<br>
+**Duplication issue 1:** Duplication in `nematode_field_sampling.csv` for collection_id C-5169.<br>
+**Solution:** Remove fulcrum_id `2e161ffe-01ee-45b3-8d28-28db8e070eb7` b/c it does not have an isolation record and it doesn't have substrate temperature or substrate notes.<br>
+**Duplication issue 2:** Duplication in `nematode_field_sampling.csv` for collection_id C-5240.<br>
+**Solution:** Remove fulcrum_id `9bbdd0cf-6eee-4b9f-a127-11e6039bae00` b/c it does not have an isolation record and was created 1 min before correct record.<br>
+**Duplication issue 3:** Duplication in `nematode_field_sampling.csv` for collection_id C-5696.<br>
+**Solution:** Remove fulcrum_id `1a822595-a9a4-4319-b57a-7045a3c87efc` b/c it does not have an isolation record and and it doesn't have substrate temperature.<br>
+**Duplication issue 4:** Duplication in `nematode_isolation.csv` for collection_id C-5589.<br>
+**Solution:** Removed extra isolation record for C-5589, using first isolation record only.<br>
+**Duplication issue 5:** Duplication in `nematode_isolation.csv` for collection_id C-5607.<br>
+**Solution:** Removed extra isolation record for C-5607, using first isolation record only.<br>
+**Duplication issue 6:** Duplication in `nematode_isolation.csv` for collection_id C-5630.<br>
+**Solution:** Removed extra isolation record for C-5630, using first isolation record only.<br>
 
 ### Location Review
 ```{r, echo=F, warning = F, message=F}
@@ -689,10 +632,9 @@ diagnostic_map <-  map_collection(test_df %>% dplyr::mutate(color = case_when(co
 
 diagnostic_map
 ```
-Use this map to manually check latitidue and longitude of collection records.
+Use this map to manually check latitidue and longitude of collection records. Click on the points to get info on the collections.
 <br> <font color="darkred">*Red points*</font> are located using `fulcrum` lat,long and may need to be corrected.
 <br> <font color="darkgreen">*Green points*</font> are located using `photo` lat,long and are usually accurate.
-
 
 ### C. tribulationis species map
 ```{r, echo=F, warning = F, message=F}
@@ -785,6 +727,7 @@ target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(
 
 target_map
 ```
+Click on the points to get info on the collections.
 <br> <font color="darkorange">*Orange points*</font> are C. tribulationis.
 
 ### Target species map
@@ -875,87 +818,111 @@ target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(
 
 target_map
 ```
-<br> <font color="darkred">*Red points*</font> are C. elegans.
+<font color="darkred">*Red points*</font> are C. elegans.
 <br> <font color="darkblue">*Blue points*</font> are C. briggsae.
 <br> <font color="darkorange">*Orange points*</font> are C. tribulationis.
-<br> Zoom to see all collections.
+<br> Zoom to see all collections and click on the points to get more info.
 
 ### Possible new species map
 ```{r, echo=F, warning = F, message=F}
-# Target species map function
-# Map_collection function for reviewing collection locations
-# map_ns <- function(df, color_use) {
-#   
-#   icos <- iconList(
-#   grey = makeIcon(
-#       iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/grey.svg"),
-#       iconWidth = 15, iconHeight = 15,
-#       popupAnchorX = 0.001, popupAnchorY = -15,
-#       iconAnchorX = 15/2, iconAnchorY = 15
-#     ),
-#     orange = makeIcon(
-#       iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/orange.svg"),
-#      iconWidth = 15, iconHeight = 15,
-#       popupAnchorX = 0.001, popupAnchorY = -15,
-#       iconAnchorX = 15/2, iconAnchorY = 15
-#   ),
-#     blue = makeIcon(
-#       iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/blue.svg"),
-#       iconWidth = 15, iconHeight = 15,
-#       popupAnchorX = 0.001, popupAnchorY = -15,
-#       iconAnchorX = 15/2, iconAnchorY = 15
-#   )
-# )
-#   df <- dplyr::filter(df, !is.na(df[[color_use]])) %>%
-#     dplyr::mutate(substrate=ifelse(is.na(substrate), "", substrate)) %>%
-#     dplyr::arrange(species_id)
-#   
-#   #print(df)
-#  
-#   
-#   attach(df)
-#   leaflet::leaflet(data = df, width = "100%", options = list(zoomControl = T)) %>% 
-#     leaflet::addTiles( 
-#       paste0( 
-#         "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png",
-#         jsonlite::read_json("data/thunderforest.json")$key)  
-#     ) %>%
-#     leaflet::addMarkers(~collection_longitude,
-#                         ~collection_latitude,
-#                         popup = glue::glue("<h2>{collection_id}</h2><hr />
-#                                            <strong>trail:</strong> {collection_trail}<br /> 
-#                                            <strong>collection uplaoded by:</strong> {collection_by}<br />
-#                                            <strong>latitidue, longitude:</strong> {format(round(collection_latitude, 6), nsmall = 6)}, {format(round(collection_longitude, 6), nsmall = 6)}<br />
-#                                            <strong>location:</strong> {collection_location}<br />
-#                                            <strong>substrate:</strong> {substrate}<br />
-#                                            <strong>substrate other:</strong>{substrate_other}<br />
-#                                            <strong>substrate notes:</strong> {substrate_notes}<br />
-#                                            <strong>possible new caeno sp:</strong> {`ns_count`}<br /><br />"),
-#                         popupOptions(maxWidth = 500),
-#                         icon = icos[ df[[color_use]] ] )
-#   
-#   #htmlwidgets::saveWidget(m, tempfile(), selfcontained = FALSE)
-#   #webshot::webshot("temp.html", file = "map.png",
-#   #        cliprect = "viewport", vwidth = 1000, vheight = 1000)
-# }
-# 
-# # Make df for diagnostic plotting
-# ns_df <- fulcrum_dat %>%
-#   dplyr::filter(possible_new_species == 1) %>%
-#   dplyr::group_by(collection_id) %>%
-#   dplyr::mutate(ns_count = n()) %>%
-#   dplyr::ungroup() %>%
-#   dplyr::distinct(collection_id, .keep_all =T) %>%
-#   dplyr::arrange(collection_id, desc(ns_count))
-#   
-# 
-# # map collection for diagnostic
-# ns_map <-  map_ns(ns_df %>% dplyr::mutate(color = case_when(possible_new_species == 1 ~ "grey",
-#                                                                                 possible_new_species == 0 ~ "blue")), "color")
-# 
-# ns_map
-# 
+#Target species map function
+#Map_collection function for reviewing collection locations
+map_ns <- function(df, color_use) {
+
+  icos <- iconList(
+  grey = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/grey.svg"),
+      iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+    ),
+    orange = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/orange.svg"),
+     iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+  ),
+    blue = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/blue.svg"),
+      iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+  )
+)
+  df <- dplyr::filter(df, !is.na(df[[color_use]])) %>%
+    dplyr::mutate(substrate=ifelse(is.na(substrate), "", substrate)) %>%
+    dplyr::arrange(species_id)
+
+  #print(df)
+
+
+  attach(df)
+  leaflet::leaflet(data = df, width = "100%", options = list(zoomControl = T)) %>%
+    leaflet::addTiles(
+      paste0(
+        "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png",
+        jsonlite::read_json("data/thunderforest.json")$key)
+    ) %>%
+    leaflet::addMarkers(~collection_longitude,
+                        ~collection_latitude,
+                        popup = glue::glue("<h2>{collection_id}</h2><hr />
+                                           <strong>trail:</strong> {collection_trail}<br />
+                                           <strong>collection uplaoded by:</strong> {collection_by}<br />
+                                           <strong>latitidue, longitude:</strong> {format(round(collection_latitude, 6), nsmall = 6)}, {format(round(collection_longitude, 6), nsmall = 6)}<br />
+                                           <strong>location:</strong> {collection_location}<br />
+                                           <strong>substrate:</strong> {substrate}<br />
+                                           <strong>substrate other:</strong>{substrate_other}<br />
+                                           <strong>substrate notes:</strong> {substrate_notes}<br />
+                                           <strong>possible new caeno sp:</strong> {`ns_count`}<br /><br />"),
+                        popupOptions(maxWidth = 500),
+                        icon = icos[ df[[color_use]] ] )
+
+  #htmlwidgets::saveWidget(m, tempfile(), selfcontained = FALSE)
+  #webshot::webshot("temp.html", file = "map.png",
+  #        cliprect = "viewport", vwidth = 1000, vheight = 1000)
+}
+
+# Make df for diagnostic plotting
+ns_df <- fulcrum_dat %>%
+  dplyr::filter(possible_new_caeno_sp == 1) %>%
+  dplyr::group_by(collection_id) %>%
+  dplyr::mutate(ns_count = n()) %>%
+  dplyr::ungroup() %>%
+  dplyr::distinct(collection_id, .keep_all =T) %>%
+  dplyr::arrange(collection_id, desc(ns_count))
+
+
+# map collection for diagnostic
+ns_map <-  map_ns(ns_df %>% dplyr::mutate(color = case_when(possible_new_caeno_sp == 1 ~ "grey",
+                                                                                possible_new_caeno_sp == 0 ~ "blue")), "color")
+
+ns_map
+
 
 ```
+No possible new Caenorhabditis species identified<br>
 
-### Concerns as of 20200313
+### Concerns as of 202000518
+**1.** `nematode_isolation_s_labeled_plates.csv` file has 2 records without S-labels. These records are associated with C-5407 and C-5493. They were collected by Matt Rockman and isolated by Claire Buchanan. These might be Matt's isolates that were not proliferating?<br>
+**2.** We have three altitude methods, "photo" (exif), "genonames", and "fulcrum". They are prioritized in that order meaning we take "photo" over "genonames" and "geonames" over "fulcrum". Current preference is not very smart and can be improved. For example, when "geonames" method gives altitude of -32768 meters and "fulcrum" method gives 84 meters. Better method selection code should be written.<br>
+**3.** There are 4 isntances where S-labels are not found in fulcrum:<br>
+S-13381<br>
+S-13570<br>
+S-13585<br>
+S-13657<br>
+These are coming from the genotyping Google sheet. S-13570 has a species_id of "C. tribulationis".<br>
+**4.** Isolations that need to be resequenced = 9. I don't trust this number because the code is not generalizable across projects. It matches strings containing "redo" in the notes section of the genotyping Google sheet that also have pcr_product_its2 = 1. Unless we standardize notes for what needs to be redone in genotyping Google sheet we can't count on this method to work. From reviewing the genotyping Google sheet it seems like more strains need to be resequenced. Claire will have to verify.<br>
+**5.** There is no strain name reporting. This would be helpful in the overall report. Duplications of names and flags for ECA_dirty and ECA_clean not using odd/even numbers correctly.<br>
+**6.** There are 12 C-labels with no isolation data. These are:<br>
+C-5246<br>
+C-5260<br>
+C-5389<br>
+C-5403<br>
+C-5597<br>
+C-5620<br>
+C-5718<br>
+C-5817<br>
+C-5818<br>
+C-5820<br>
+C-5822<br>
+C-5962 
