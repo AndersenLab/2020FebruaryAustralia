@@ -1,2 +1,2 @@
 # 2020FebruaryAustralia
-Nematode sampling in Australia conducted by Erik Andersen, Matt Rockman and Lewis Stevens
+Wild nematode collection project for Australia. Collections made by Lewis Stevens, Matt Rockman, and Erik Andersen.
