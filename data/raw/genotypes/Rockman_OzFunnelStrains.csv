@@ -1,0 +1,230 @@
+strain_name,s_label,species_id,collection_location
+QG4003,5162.1,C. elegans,Bunya Mtns
+QG4004,5177.1,,Bunya Mtns
+QG4005,5177.2,C. elegans,Bunya Mtns
+QG4006,5177.3,,Bunya Mtns
+QG4007,5177.4,C. elegans,Bunya Mtns
+QG4008,5177.5,,Bunya Mtns
+QG4009,5177.6,C. elegans,Bunya Mtns
+QG4010,5185.2,C. elegans,Tamborine
+QG4011,5185.3,C. elegans,Tamborine
+QG4012,5185.4,C. elegans,Tamborine
+QG4013,5185.5,C. elegans,Tamborine
+QG4014,5185.6,C. elegans,Tamborine
+QG4015,5186.1,C. elegans,Tamborine
+QG4016,5186.2,C. elegans,Tamborine
+QG4017,5186.3,C. elegans,Tamborine
+QG4018,5186.4,C. elegans,Tamborine
+QG4019,5186.5,C. elegans,Tamborine
+QG4020,5187.1,C. tribulationis,Tamborine
+QG4021,5187.2,C. elegans,Tamborine
+QG4022,5187.3,C. tribulationis,Tamborine
+QG4023,5207.1,C. tribulationis,Imbil
+QG4024,5207.2,C. tribulationis,Imbil
+QG4025,5213,C. tribulationis,The Palms
+QG4026,5250.1,C. briggsae,Woondum
+QG4027,5250.2,C. briggsae,Woondum
+QG4028,5250.3,C. briggsae,Woondum
+QG4029,5250.4,C. briggsae,Woondum
+QG4030,5250.5,C. briggsae,Woondum
+QG4031,5250.6,C. briggsae,Woondum
+QG4032,5254.1,C. tribulationis,Amamoor
+QG4033,5295.1,C. tribulationis,Bartle Frere
+QG4034,5295.2,C. tribulationis,Bartle Frere
+QG4035,5295.3,C. tribulationis,Bartle Frere
+QG4036,5297.1,C. tribulationis,Herberton
+QG4037,5297.2,C. tribulationis,Herberton
+QG4038,5297.3,C. tribulationis,Herberton
+QG4039,5297.4,C. tribulationis,Herberton
+QG4040,5297.5,,Herberton
+QG4041,5303.1,C. tribulationis,Herberton
+QG4042,5303.2,C. tribulationis,Herberton
+QG4043,5303.3,C. tribulationis,Herberton
+QG4044,5316.1,C. tribulationis,Bartle Frere
+QG4045,5321.1,C. tribulationis,Bartle Frere
+QG4046,5321.2,C. tribulationis,Bartle Frere
+QG4047,5321.3,C. tribulationis,Bartle Frere
+QG4048,5322.1,C. tribulationis,Bartle Frere
+QG4049,5322.2,C. tribulationis,Bartle Frere
+QG4050,5322.3,C. tribulationis,Bartle Frere
+QG4051,5323.3,C. tribulationis,Bartle Frere
+QG4052,5324.1,C. tribulationis,Bartle Frere
+QG4053,5324.2,C. tribulationis,Bartle Frere
+QG4054,5324.3,,Bartle Frere
+QG4055,5324.5,C. tribulationis,Bartle Frere
+QG4056,5341.1,C. tribulationis,Eungella
+QG4057,5341.2,C. tribulationis,Eungella
+QG4058,5341.3,C. briggsae,Eungella
+QG4059,5344.1,C. briggsae,Eungella
+QG4060,5344.2,C. briggsae,Eungella
+QG4061,5344.3,C. briggsae,Eungella
+QG4062,5344.4,C. briggsae,Eungella
+QG4063,5344.5,C. briggsae,Eungella
+QG4064,5345.1,C. briggsae,Eungella
+QG4065,5345.2,C. briggsae,Eungella
+QG4066,5345.3,,Eungella
+QG4067,5345.4,C. briggsae,Eungella
+QG4068,5345.5,C. briggsae,Eungella
+QG4069,5345.6,C. briggsae,Eungella
+QG4070,5346.1,C. briggsae,Eungella
+QG4071,5346.2,,Eungella
+QG4072,5346.3,,Eungella
+QG4073,5346.4,C. briggsae,Eungella
+QG4074,5346.5,C. briggsae,Eungella
+QG4075,5346.6,C. briggsae,Eungella
+QG4076,5363.1,C. elegans,Kroombit Tops
+QG4077,5363.2,C. elegans,Kroombit Tops
+QG4078,5363.3,C. elegans,Kroombit Tops
+QG4079,5363.5,C. elegans,Kroombit Tops
+QG4080,5363.6,C. elegans,Kroombit Tops
+QG4081,5367.1,C. tribulationis,Mt. Lewis
+QG4082,5367.2,C. tribulationis,Mt. Lewis
+QG4083,5367.3,C. tribulationis,Mt. Lewis
+QG4084,5368.1,C. tribulationis,Mt. Lewis
+QG4085,5368.2,C. tribulationis,Mt. Lewis
+QG4086,5368.3,C. tribulationis,Mt. Lewis
+QG4087,5374.1,C. tribulationis,Mt. Lewis
+QG4088,5374.2,C. tribulationis,Mt. Lewis
+QG4089,5374.3,C. tribulationis,Mt. Lewis
+QG4090,5379.1,C. tribulationis,Mt. Lewis
+QG4091,5379.2,C. tribulationis,Mt. Lewis
+QG4092,5413.1,C. tribulationis,Bartle Frere
+QG4093,5415.1,C. briggsae,Eungella
+QG4094,5415.2,C. briggsae,Eungella
+QG4095,5415.3,C. briggsae,Eungella
+QG4096,5420.1,C. briggsae,Eungella
+QG4097,5420.2,C. briggsae,Eungella
+QG4098,5420.3,,Eungella
+QG4099,5420.4,,Eungella
+QG4100,5420.5,C. briggsae,Eungella
+QG4101,5420.6,,Eungella
+QG4102,5421.1,C. tribulationis,Eungella
+QG4103,5421.2,C. elegans,Eungella
+QG4104,5421.3,C. briggsae,Eungella
+QG4105,5421.5,C. tribulationis,Eungella
+QG4106,5421.6,C. tribulationis,Eungella
+QG4107,5423.2,C. tribulationis,Eungella
+QG4108,5423.3,C. tribulationis,Eungella
+QG4109,5423.4,C. tribulationis,Eungella
+QG4110,5423.5,C. tribulationis,Eungella
+QG4111,5423.6,C. tribulationis,Eungella
+QG4112,5425.1,,Eungella
+QG4113,5425.2,,Eungella
+QG4114,5425.3,,Eungella
+QG4115,5425.4,C. briggsae,Eungella
+QG4116,5425.5,,Eungella
+QG4117,5425.6,,Eungella
+QG4118,5432.1,,Eungella
+QG4119,5432.2,C. briggsae,Eungella
+QG4120,5432.3,,Eungella
+QG4121,5432.4,,Eungella
+QG4122,5432.5,,Eungella
+QG4123,5432.6,C. briggsae,Eungella
+QG4124,5437.1,C. tribulationis,Eungella
+QG4125,5437.3,C. tribulationis,Eungella
+QG4126,5437.4,C. tribulationis,Eungella
+QG4127,5437.5,C. tribulationis,Eungella
+QG4128,5439.1,C. briggsae,Eungella
+QG4129,5439.2,C. briggsae,Eungella
+QG4130,5439.3,C. briggsae,Eungella
+QG4131,5439.4,C. briggsae,Eungella
+QG4132,5439.5,C. briggsae,Eungella
+QG4133,5439.6,C. briggsae,Eungella
+QG4134,5441.1,C. elegans,Tamborine
+QG4135,5441.2,C. elegans,Tamborine
+QG4136,5442.1,C. tribulationis,Tamborine
+QG4137,5442.2,C. elegans,Tamborine
+QG4138,5442.3,C. elegans,Tamborine
+QG4139,5442.4,C. elegans,Tamborine
+QG4140,5442.5,C. tribulationis,Tamborine
+QG4141,5442.6,C. tribulationis,Tamborine
+QG4142,5443.2,C. tribulationis,Tamborine
+QG4143,5443.3,C. tribulationis,Tamborine
+QG4144,5444.1,C. tribulationis,Tamborine
+QG4145,5444.2,C. tribulationis,Tamborine
+QG4146,5446.1,,Tamborine
+QG4147,5446.2,,Tamborine
+QG4148,5446.3,,Tamborine
+QG4149,5447.1,C. tribulationis,Tamborine
+QG4150,5447.2,C. tribulationis,Tamborine
+QG4151,5447.3,,Tamborine
+QG4152,5447.4,C. tribulationis,Tamborine
+QG4153,5448.2,C. tribulationis,Tamborine
+QG4154,5448.3,C. tribulationis,Tamborine
+QG4155,5449.2,C. tribulationis,Tamborine
+QG4156,5449.3,C. tribulationis,Tamborine
+QG4157,5450.1,C. tribulationis,Tamborine
+QG4158,5451.1,C. elegans,Tamborine
+QG4159,5451.2,C. elegans,Tamborine
+QG4160,5451.3,C. elegans,Tamborine
+QG4161,5451.4,C. elegans,Tamborine
+QG4162,5451.5,C. elegans,Tamborine
+QG4163,5451.6,C. elegans,Tamborine
+QG4164,5453.1,C. tribulationis,Tamborine
+QG4165,5453.2,C. tribulationis,Tamborine
+QG4166,5456.2,C. elegans,Tamborine
+QG4167,5456.3,C. tribulationis,Tamborine
+QG4168,5457.2,C. tribulationis,Tamborine
+QG4169,5457.3,C. tribulationis,Tamborine
+QG4170,5459.2,C. tribulationis,Tamborine
+QG4171,5459.3,C. tribulationis,Tamborine
+QG4172,5460.1,C. tribulationis,Tamborine
+QG4173,5460.2,C. tribulationis,Tamborine
+QG4174,5461.1,C. tribulationis,Tamborine
+QG4175,5461.2,C. tribulationis,Tamborine
+QG4176,5461.3,C. tribulationis,Tamborine
+QG4177,5462.1,C. elegans,Tamborine
+QG4178,5490.1,C. tribulationis,Tamborine
+QG4179,5490.2,C. tribulationis,Tamborine
+QG4180,5490.3,C. tribulationis,Tamborine
+QG4181,5492.1,C. tribulationis,Tamborine
+QG4182,5492.2,C. elegans,Tamborine
+QG4183,5492.3,C. tribulationis,Tamborine
+QG4184,5492.4,C. elegans,Tamborine
+QG4185,5492.5,C. elegans,Tamborine
+QG4186,5492.6,C. elegans,Tamborine
+QG4187,5496.2,C. tribulationis,Tamborine
+QG4188,5496.3,C. tribulationis,Tamborine
+QG4189,5497.1,C. tribulationis,Tamborine
+QG4190,5497.2,C. tribulationis,Tamborine
+QG4191,5497.3,C. tribulationis,Tamborine
+QG4192,5497.4,C. tribulationis,Tamborine
+QG4193,5498.1,,Tamborine
+QG4194,5498.2,,Tamborine
+QG4195,5508.3,,Springbrook
+QG4196,5511.1,C. tribulationis,Tamborine
+QG4197,5511.3,C. tribulationis,Tamborine
+QG4198,5511.4,C. tribulationis,Tamborine
+QG4199,5512.2,C. tribulationis,Tamborine
+QG4200,5512.3,C. tribulationis,Tamborine
+QG4201,5512.4,C. tribulationis,Tamborine
+QG4202,5512.5,,Tamborine
+QG4203,5512.6,C. tribulationis,Tamborine
+QG4204,5514.1,C. tribulationis,Tamborine
+QG4205,5514.2,C. tribulationis,Tamborine
+QG4206,5609.1,C. briggsae,Eungella
+QG4207,5609.2,C. briggsae,Eungella
+QG4208,5609.3,C. briggsae,Eungella
+QG4209,5609.4,C. briggsae,Eungella
+QG4210,5609.5,C. briggsae,Eungella
+QG4211,5609.6,C. briggsae,Eungella
+QG4212,5612.1,C. briggsae,Eungella
+QG4213,5612.2,C. briggsae,Eungella
+QG4214,5615.4,,Eungella
+QG4215,5628.1,C. n. sp,Paluma
+QG4216,5628.2,C. n. sp,Paluma
+QG4217,5628.3,C. n. sp,Paluma
+QG4218,5695.1,C. tribulationis,Imbil
+QG4219,5695.2,C. tribulationis,Imbil
+QG4220,5703.1,C. tribulationis,The Palms
+QG4221,5703.2,,The Palms
+QG4222,5715.1,C. tribulationis,The Palms
+QG4223,5421.4a,C. tribulationis,Eungella
+QG4224,5421.4b,C. tribulationis,Eungella
+QG4225,5437.2a,C. briggsae,Eungella
+QG4226,5456.1a,C. elegans,Tamborine
+QG4227,5456.1b,C. tribulationis,Tamborine
+QG4228,5468.1a,C. elegans,Springbrook
+QG4229,5468.1b,C. tribulationis,Springbrook
+QG4230,5508.1a,C. tribulationis,Springbrook
+QG4231,5537.2b,C. briggsae,Eungella
