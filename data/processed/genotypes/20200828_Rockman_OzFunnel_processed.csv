@@ -1,0 +1,232 @@
+project_id,shipment_sent_date,shipment_received_date,shipment_number,shipment_color,isolation_box_number,s_label,s_label_repeat_error,proliferation_48,proliferation_168,proliferating,strip_tube_number,strip_tube_position,lysis_date,lysis_notes,ssu_pcr_date,its2_pcr_date,pcr_plate_number,pcr_well,gel_number,gel_position,pcr_product_ssu,positive_ctrl_ssu,neg_ctrl_ssu,ssu_fail_redo,pcr_product_its2,positive_ctrl_its2,neg_ctrl_ist2,general_notes,mclab_sequencing_plate,mclab_sequencing_well,manual_blast_notes,species_id,possible_new_caeno_sp,make_strain_name,reason_strain_not_named,strain_name,pair_name,strain_lost,location,spid_18s,spid_testcross,species_id_method,c_label
+2020FebruaryAustralia,,,,,,S-5162.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4003,S-5162.1:QG4003,0,Bunya Mtns,yes,no,18S,C-5162
+2020FebruaryAustralia,,,,,,S-5177.1,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4004,S-5177.1:QG4004,0,Bunya Mtns,no,yes,test cross,C-5177
+2020FebruaryAustralia,,,,,,S-5177.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4005,S-5177.2:QG4005,0,Bunya Mtns,yes,yes,18S and test cross,C-5177
+2020FebruaryAustralia,,,,,,S-5177.3,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4006,S-5177.3:QG4006,0,Bunya Mtns,no,yes,test cross,C-5177
+2020FebruaryAustralia,,,,,,S-5177.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4007,S-5177.4:QG4007,0,Bunya Mtns,yes,no,18S,C-5177
+2020FebruaryAustralia,,,,,,S-5177.5,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4008,S-5177.5:QG4008,0,Bunya Mtns,no,yes,test cross,C-5177
+2020FebruaryAustralia,,,,,,S-5177.6,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4009,S-5177.6:QG4009,0,Bunya Mtns,yes,no,18S,C-5177
+2020FebruaryAustralia,,,,,,S-5185.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4010,S-5185.2:QG4010,0,Tamborine,yes,yes,18S and test cross,C-5185
+2020FebruaryAustralia,,,,,,S-5185.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4011,S-5185.3:QG4011,0,Tamborine,yes,yes,18S and test cross,C-5185
+2020FebruaryAustralia,,,,,,S-5185.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4012,S-5185.4:QG4012,0,Tamborine,yes,yes,18S and test cross,C-5185
+2020FebruaryAustralia,,,,,,S-5185.5,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,strain lost before it was frozen,,,1,Tamborine,yes,no,18S,C-5185
+2020FebruaryAustralia,,,,,,S-5185.6,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4014,S-5185.6:QG4014,0,Tamborine,no,yes,test cross,C-5185
+2020FebruaryAustralia,,,,,,S-5186.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4015,S-5186.1:QG4015,0,Tamborine,yes,yes,18S and test cross,C-5186
+2020FebruaryAustralia,,,,,,S-5186.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4016,S-5186.2:QG4016,0,Tamborine,yes,yes,18S and test cross,C-5186
+2020FebruaryAustralia,,,,,,S-5186.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4017,S-5186.3:QG4017,0,Tamborine,yes,yes,18S and test cross,C-5186
+2020FebruaryAustralia,,,,,,S-5186.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4018,S-5186.4:QG4018,0,Tamborine,yes,yes,18S and test cross,C-5186
+2020FebruaryAustralia,,,,,,S-5186.5,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4019,S-5186.5:QG4019,0,Tamborine,yes,yes,18S and test cross,C-5186
+2020FebruaryAustralia,,,,,,S-5187.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4020,S-5187.1:QG4020,0,Tamborine,yes,no,18S,C-5187
+2020FebruaryAustralia,,,,,,S-5187.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4021,S-5187.2:QG4021,0,Tamborine,yes,no,18S,C-5187
+2020FebruaryAustralia,,,,,,S-5187.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4022,S-5187.3:QG4022,0,Tamborine,yes,no,18S,C-5187
+2020FebruaryAustralia,,,,,,S-5207.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4023,S-5207.1:QG4023,0,Imbil,yes,yes,18S and test cross,C-5207
+2020FebruaryAustralia,,,,,,S-5207.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4024,S-5207.2:QG4024,0,Imbil,yes,no,18S,C-5207
+2020FebruaryAustralia,,,,,,S-5213,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4025,S-5213:QG4025,0,The Palms,yes,yes,18S and test cross,C-5213
+2020FebruaryAustralia,,,,,,S-5250.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4026,S-5250.1:QG4026,0,Woondum,yes,no,18S,C-5250
+2020FebruaryAustralia,,,,,,S-5250.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4027,S-5250.2:QG4027,0,Woondum,yes,no,18S,C-5250
+2020FebruaryAustralia,,,,,,S-5250.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4028,S-5250.3:QG4028,0,Woondum,yes,no,18S,C-5250
+2020FebruaryAustralia,,,,,,S-5250.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4029,S-5250.4:QG4029,0,Woondum,yes,no,18S,C-5250
+2020FebruaryAustralia,,,,,,S-5250.5,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4030,S-5250.5:QG4030,0,Woondum,yes,no,18S,C-5250
+2020FebruaryAustralia,,,,,,S-5250.6,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4031,S-5250.6:QG4031,0,Woondum,yes,no,18S,C-5250
+2020FebruaryAustralia,,,,,,S-5254.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4032,S-5254.1:QG4032,0,Amamoor,yes,no,18S,C-5254
+2020FebruaryAustralia,,,,,,S-5295.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4033,S-5295.1:QG4033,0,Bartle Frere,yes,yes,18S and test cross,C-5295
+2020FebruaryAustralia,,,,,,S-5295.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4034,S-5295.2:QG4034,0,Bartle Frere,yes,yes,18S and test cross,C-5295
+2020FebruaryAustralia,,,,,,S-5295.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4035,S-5295.3:QG4035,0,Bartle Frere,yes,yes,18S and test cross,C-5295
+2020FebruaryAustralia,,,,,,S-5297.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4036,S-5297.1:QG4036,0,Herberton,yes,no,18S,C-5297
+2020FebruaryAustralia,,,,,,S-5297.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4037,S-5297.2:QG4037,0,Herberton,yes,no,18S,C-5297
+2020FebruaryAustralia,,,,,,S-5297.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4038,S-5297.3:QG4038,0,Herberton,yes,no,18S,C-5297
+2020FebruaryAustralia,,,,,,S-5297.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4039,S-5297.4:QG4039,0,Herberton,yes,no,18S,C-5297
+2020FebruaryAustralia,,,,,,S-5297.5,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4040,S-5297.5:QG4040,0,Herberton,no,yes,test cross,C-5297
+2020FebruaryAustralia,,,,,,S-5303.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4041,S-5303.1:QG4041,0,Herberton,yes,no,18S,C-5303
+2020FebruaryAustralia,,,,,,S-5303.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4042,S-5303.2:QG4042,0,Herberton,yes,no,18S,C-5303
+2020FebruaryAustralia,,,,,,S-5303.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4043,S-5303.3:QG4043,0,Herberton,yes,yes,18S and test cross,C-5303
+2020FebruaryAustralia,,,,,,S-5316.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4044,S-5316.1:QG4044,0,Bartle Frere,yes,yes,18S and test cross,C-5316
+2020FebruaryAustralia,,,,,,S-5321.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4045,S-5321.1:QG4045,0,Bartle Frere,yes,no,18S,C-5321
+2020FebruaryAustralia,,,,,,S-5321.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4046,S-5321.2:QG4046,0,Bartle Frere,yes,no,18S,C-5321
+2020FebruaryAustralia,,,,,,S-5321.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4047,S-5321.3:QG4047,0,Bartle Frere,yes,no,18S,C-5321
+2020FebruaryAustralia,,,,,,S-5322.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4048,S-5322.1:QG4048,0,Bartle Frere,yes,yes,18S and test cross,C-5322
+2020FebruaryAustralia,,,,,,S-5322.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4049,S-5322.2:QG4049,0,Bartle Frere,yes,yes,18S and test cross,C-5322
+2020FebruaryAustralia,,,,,,S-5322.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4050,S-5322.3:QG4050,0,Bartle Frere,yes,yes,18S and test cross,C-5322
+2020FebruaryAustralia,,,,,,S-5323.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4051,S-5323.3:QG4051,0,Bartle Frere,yes,yes,18S and test cross,C-5323
+2020FebruaryAustralia,,,,,,S-5324.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4052,S-5324.1:QG4052,0,Bartle Frere,yes,yes,18S and test cross,C-5324
+2020FebruaryAustralia,,,,,,S-5324.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4053,S-5324.2:QG4053,0,Bartle Frere,yes,yes,18S and test cross,C-5324
+2020FebruaryAustralia,,,,,,S-5324.3,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4054,S-5324.3:QG4054,0,Bartle Frere,no,yes,test cross,C-5324
+2020FebruaryAustralia,,,,,,S-5324.5,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4055,S-5324.5:QG4055,0,Bartle Frere,yes,no,18S,C-5324
+2020FebruaryAustralia,,,,,,S-5341.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4056,S-5341.1:QG4056,0,Eungella,yes,no,18S,C-5341
+2020FebruaryAustralia,,,,,,S-5341.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,strain lost before it was frozen,,,1,Eungella,yes,no,18S,C-5341
+2020FebruaryAustralia,,,,,,S-5341.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4058,S-5341.3:QG4058,0,Eungella,yes,no,18S,C-5341
+2020FebruaryAustralia,,,,,,S-5344.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4059,S-5344.1:QG4059,0,Eungella,yes,no,18S,C-5344
+2020FebruaryAustralia,,,,,,S-5344.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,strain lost before it was frozen,,,1,Eungella,yes,no,18S,C-5344
+2020FebruaryAustralia,,,,,,S-5344.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4061,S-5344.3:QG4061,0,Eungella,yes,no,18S,C-5344
+2020FebruaryAustralia,,,,,,S-5344.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4062,S-5344.4:QG4062,0,Eungella,yes,no,18S,C-5344
+2020FebruaryAustralia,,,,,,S-5344.5,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4063,S-5344.5:QG4063,0,Eungella,yes,yes,18S and test cross,C-5344
+2020FebruaryAustralia,,,,,,S-5345.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4064,S-5345.1:QG4064,0,Eungella,yes,no,18S,C-5345
+2020FebruaryAustralia,,,,,,S-5345.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4065,S-5345.2:QG4065,0,Eungella,yes,no,18S,C-5345
+2020FebruaryAustralia,,,,,,S-5345.3,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4066,S-5345.3:QG4066,0,Eungella,no,no,,C-5345
+2020FebruaryAustralia,,,,,,S-5345.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4067,S-5345.4:QG4067,0,Eungella,yes,no,18S,C-5345
+2020FebruaryAustralia,,,,,,S-5345.5,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4068,S-5345.5:QG4068,0,Eungella,yes,no,18S,C-5345
+2020FebruaryAustralia,,,,,,S-5345.6,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4069,S-5345.6:QG4069,0,Eungella,yes,no,18S,C-5345
+2020FebruaryAustralia,,,,,,S-5346.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4070,S-5346.1:QG4070,0,Eungella,yes,no,18S,C-5346
+2020FebruaryAustralia,,,,,,S-5346.2,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4071,S-5346.2:QG4071,0,Eungella,no,yes,test cross,C-5346
+2020FebruaryAustralia,,,,,,S-5346.3,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4072,S-5346.3:QG4072,0,Eungella,no,yes,test cross,C-5346
+2020FebruaryAustralia,,,,,,S-5346.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4073,S-5346.4:QG4073,0,Eungella,yes,no,18S,C-5346
+2020FebruaryAustralia,,,,,,S-5346.5,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4074,S-5346.5:QG4074,0,Eungella,yes,no,18S,C-5346
+2020FebruaryAustralia,,,,,,S-5346.6,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4075,S-5346.6:QG4075,0,Eungella,yes,no,18S,C-5346
+2020FebruaryAustralia,,,,,,S-5363.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4076,S-5363.1:QG4076,0,Kroombit Tops,yes,yes,18S and test cross,C-5363
+2020FebruaryAustralia,,,,,,S-5363.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4077,S-5363.2:QG4077,0,Kroombit Tops,yes,yes,18S and test cross,C-5363
+2020FebruaryAustralia,,,,,,S-5363.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4078,S-5363.3:QG4078,0,Kroombit Tops,yes,yes,18S and test cross,C-5363
+2020FebruaryAustralia,,,,,,S-5363.5,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4079,S-5363.5:QG4079,0,Kroombit Tops,yes,no,18S,C-5363
+2020FebruaryAustralia,,,,,,S-5363.6,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4080,S-5363.6:QG4080,0,Kroombit Tops,yes,no,18S,C-5363
+2020FebruaryAustralia,,,,,,S-5367.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4081,S-5367.1:QG4081,0,Mt. Lewis,yes,yes,18S and test cross,C-5367
+2020FebruaryAustralia,,,,,,S-5367.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4082,S-5367.2:QG4082,0,Mt. Lewis,yes,yes,18S and test cross,C-5367
+2020FebruaryAustralia,,,,,,S-5367.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4083,S-5367.3:QG4083,0,Mt. Lewis,yes,yes,18S and test cross,C-5367
+2020FebruaryAustralia,,,,,,S-5368.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4084,S-5368.1:QG4084,0,Mt. Lewis,yes,yes,18S and test cross,C-5368
+2020FebruaryAustralia,,,,,,S-5368.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4085,S-5368.2:QG4085,0,Mt. Lewis,yes,yes,18S and test cross,C-5368
+2020FebruaryAustralia,,,,,,S-5368.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4086,S-5368.3:QG4086,0,Mt. Lewis,yes,yes,18S and test cross,C-5368
+2020FebruaryAustralia,,,,,,S-5374.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4087,S-5374.1:QG4087,0,Mt. Lewis,yes,yes,18S and test cross,C-5374
+2020FebruaryAustralia,,,,,,S-5374.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4088,S-5374.2:QG4088,0,Mt. Lewis,yes,yes,18S and test cross,C-5374
+2020FebruaryAustralia,,,,,,S-5374.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4089,S-5374.3:QG4089,0,Mt. Lewis,yes,yes,18S and test cross,C-5374
+2020FebruaryAustralia,,,,,,S-5379.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4090,S-5379.1:QG4090,0,Mt. Lewis,yes,yes,18S and test cross,C-5379
+2020FebruaryAustralia,,,,,,S-5379.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4091,S-5379.2:QG4091,0,Mt. Lewis,yes,yes,18S and test cross,C-5379
+2020FebruaryAustralia,,,,,,S-5413.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4092,S-5413.1:QG4092,0,Bartle Frere,yes,yes,18S and test cross,C-5413
+2020FebruaryAustralia,,,,,,S-5415.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4093,S-5415.1:QG4093,0,Eungella,yes,no,18S,C-5415
+2020FebruaryAustralia,,,,,,S-5415.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4094,S-5415.2:QG4094,0,Eungella,yes,no,18S,C-5415
+2020FebruaryAustralia,,,,,,S-5415.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4095,S-5415.3:QG4095,0,Eungella,yes,no,18S,C-5415
+2020FebruaryAustralia,,,,,,S-5415.5,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4232,S-5415.5:QG4232,0,Eungella,no,yes,test cross,C-5415
+2020FebruaryAustralia,,,,,,S-5415.6,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4233,S-5415.6:QG4233,0,Eungella,no,yes,test cross,C-5415
+2020FebruaryAustralia,,,,,,S-5420.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4096,S-5420.1:QG4096,0,Eungella,yes,no,18S,C-5420
+2020FebruaryAustralia,,,,,,S-5420.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4097,S-5420.2:QG4097,0,Eungella,yes,no,18S,C-5420
+2020FebruaryAustralia,,,,,,S-5420.3,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4098,S-5420.3:QG4098,0,Eungella,no,no,,C-5420
+2020FebruaryAustralia,,,,,,S-5420.4,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4099,S-5420.4:QG4099,0,Eungella,no,no,,C-5420
+2020FebruaryAustralia,,,,,,S-5420.5,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4100,S-5420.5:QG4100,0,Eungella,yes,no,18S,C-5420
+2020FebruaryAustralia,,,,,,S-5420.6,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4101,S-5420.6:QG4101,0,Eungella,no,no,,C-5420
+2020FebruaryAustralia,,,,,,S-5421.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4102,S-5421.1:QG4102,0,Eungella,yes,yes,18S and test cross,C-5421
+2020FebruaryAustralia,,,,,,S-5421.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4103,S-5421.2:QG4103,0,Eungella,yes,yes,18S and test cross,C-5421
+2020FebruaryAustralia,,,,,,S-5421.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4104,S-5421.3:QG4104,0,Eungella,yes,yes,18S and test cross,C-5421
+2020FebruaryAustralia,,,,,,S-5421.4a,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4223,S-5421.4a:QG4223,0,Eungella,yes,yes,18S and test cross,C-5421
+2020FebruaryAustralia,,,,,,S-5421.4b,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4224,S-5421.4b:QG4224,0,Eungella,yes,yes,18S and test cross,C-5421
+2020FebruaryAustralia,,,,,,S-5421.5,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4105,S-5421.5:QG4105,0,Eungella,yes,yes,18S and test cross,C-5421
+2020FebruaryAustralia,,,,,,S-5421.6,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4106,S-5421.6:QG4106,0,Eungella,yes,yes,18S and test cross,C-5421
+2020FebruaryAustralia,,,,,,S-5423.2,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4107,S-5423.2:QG4107,0,Eungella,no,yes,test cross,C-5423
+2020FebruaryAustralia,,,,,,S-5423.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4108,S-5423.3:QG4108,0,Eungella,yes,yes,18S and test cross,C-5423
+2020FebruaryAustralia,,,,,,S-5423.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4109,S-5423.4:QG4109,0,Eungella,yes,yes,18S and test cross,C-5423
+2020FebruaryAustralia,,,,,,S-5423.5,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4110,S-5423.5:QG4110,0,Eungella,yes,yes,18S and test cross,C-5423
+2020FebruaryAustralia,,,,,,S-5423.6,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4111,S-5423.6:QG4111,0,Eungella,yes,yes,18S and test cross,C-5423
+2020FebruaryAustralia,,,,,,S-5425.1,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4112,S-5425.1:QG4112,0,Eungella,no,no,,C-5425
+2020FebruaryAustralia,,,,,,S-5425.2,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4113,S-5425.2:QG4113,0,Eungella,no,no,,C-5425
+2020FebruaryAustralia,,,,,,S-5425.3,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4114,S-5425.3:QG4114,0,Eungella,no,yes,test cross,C-5425
+2020FebruaryAustralia,,,,,,S-5425.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4115,S-5425.4:QG4115,0,Eungella,yes,no,18S,C-5425
+2020FebruaryAustralia,,,,,,S-5425.5,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4116,S-5425.5:QG4116,0,Eungella,no,yes,test cross,C-5425
+2020FebruaryAustralia,,,,,,S-5425.6,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4117,S-5425.6:QG4117,0,Eungella,no,yes,test cross,C-5425
+2020FebruaryAustralia,,,,,,S-5432.1,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4118,S-5432.1:QG4118,0,Eungella,no,no,,C-5432
+2020FebruaryAustralia,,,,,,S-5432.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4119,S-5432.2:QG4119,0,Eungella,yes,no,18S,C-5432
+2020FebruaryAustralia,,,,,,S-5432.3,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4120,S-5432.3:QG4120,0,Eungella,no,no,,C-5432
+2020FebruaryAustralia,,,,,,S-5432.4,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4121,S-5432.4:QG4121,0,Eungella,no,no,,C-5432
+2020FebruaryAustralia,,,,,,S-5432.5,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4122,S-5432.5:QG4122,0,Eungella,no,no,,C-5432
+2020FebruaryAustralia,,,,,,S-5432.6,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4123,S-5432.6:QG4123,0,Eungella,yes,no,18S,C-5432
+2020FebruaryAustralia,,,,,,S-5437.1,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4124,S-5437.1:QG4124,0,Eungella,no,yes,test cross,C-5437
+2020FebruaryAustralia,,,,,,S-5437.2a,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4225,S-5437.2a:QG4225,0,Eungella,yes,yes,18S and test cross,C-5437
+2020FebruaryAustralia,,,,,,S-5437.2b,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4231,S-5437.2b:QG4231,0,Eungella,no,yes,test cross,C-5437
+2020FebruaryAustralia,,,,,,S-5437.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4125,S-5437.3:QG4125,0,Eungella,yes,yes,18S and test cross,C-5437
+2020FebruaryAustralia,,,,,,S-5437.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4126,S-5437.4:QG4126,0,Eungella,yes,yes,18S and test cross,C-5437
+2020FebruaryAustralia,,,,,,S-5437.5,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4127,S-5437.5:QG4127,0,Eungella,yes,no,18S,C-5437
+2020FebruaryAustralia,,,,,,S-5439.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4128,S-5439.1:QG4128,0,Eungella,yes,no,18S,C-5439
+2020FebruaryAustralia,,,,,,S-5439.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4129,S-5439.2:QG4129,0,Eungella,yes,no,18S,C-5439
+2020FebruaryAustralia,,,,,,S-5439.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4130,S-5439.3:QG4130,0,Eungella,yes,no,18S,C-5439
+2020FebruaryAustralia,,,,,,S-5439.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4131,S-5439.4:QG4131,0,Eungella,yes,no,18S,C-5439
+2020FebruaryAustralia,,,,,,S-5439.5,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4132,S-5439.5:QG4132,0,Eungella,yes,no,18S,C-5439
+2020FebruaryAustralia,,,,,,S-5439.6,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4133,S-5439.6:QG4133,0,Eungella,yes,no,18S,C-5439
+2020FebruaryAustralia,,,,,,S-5441.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4134,S-5441.1:QG4134,0,Tamborine,yes,yes,18S and test cross,C-5441
+2020FebruaryAustralia,,,,,,S-5441.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4135,S-5441.2:QG4135,0,Tamborine,yes,yes,18S and test cross,C-5441
+2020FebruaryAustralia,,,,,,S-5442.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,strain lost before it was frozen,,,1,Tamborine,yes,no,18S,C-5442
+2020FebruaryAustralia,,,,,,S-5442.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4137,S-5442.2:QG4137,0,Tamborine,yes,no,18S,C-5442
+2020FebruaryAustralia,,,,,,S-5442.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4138,S-5442.3:QG4138,0,Tamborine,yes,no,18S,C-5442
+2020FebruaryAustralia,,,,,,S-5442.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4139,S-5442.4:QG4139,0,Tamborine,yes,no,18S,C-5442
+2020FebruaryAustralia,,,,,,S-5442.5,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4140,S-5442.5:QG4140,0,Tamborine,yes,no,18S,C-5442
+2020FebruaryAustralia,,,,,,S-5442.6,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4141,S-5442.6:QG4141,0,Tamborine,yes,no,18S,C-5442
+2020FebruaryAustralia,,,,,,S-5443.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,strain lost before it was frozen,,,1,Tamborine,yes,no,18S,C-5443
+2020FebruaryAustralia,,,,,,S-5443.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4143,S-5443.3:QG4143,0,Tamborine,yes,no,18S,C-5443
+2020FebruaryAustralia,,,,,,S-5444.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4144,S-5444.1:QG4144,0,Tamborine,yes,no,18S,C-5444
+2020FebruaryAustralia,,,,,,S-5444.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4145,S-5444.2:QG4145,0,Tamborine,yes,no,18S,C-5444
+2020FebruaryAustralia,,,,,,S-5446.1,,,,1,,,,,,,,,,,,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4146,S-5446.1:QG4146,0,Tamborine,no,no,,C-5446
+2020FebruaryAustralia,,,,,,S-5446.2,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,,QG4147,S-5446.2:QG4147,0,Tamborine,no,no,,C-5446
+2020FebruaryAustralia,,,,,,S-5446.3,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. TBD,,,strain lost before it was frozen,,,1,Tamborine,no,no,,C-5446
+2020FebruaryAustralia,,,,,,S-5447.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4149,S-5447.1:QG4149,0,Tamborine,yes,no,18S,C-5447
+2020FebruaryAustralia,,,,,,S-5447.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4150,S-5447.2:QG4150,0,Tamborine,yes,no,18S,C-5447
+2020FebruaryAustralia,,,,,,S-5447.3,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4151,S-5447.3:QG4151,0,Tamborine,no,yes,test cross,C-5447
+2020FebruaryAustralia,,,,,,S-5447.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4152,S-5447.4:QG4152,0,Tamborine,yes,no,18S,C-5447
+2020FebruaryAustralia,,,,,,S-5448.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4153,S-5448.2:QG4153,0,Tamborine,yes,no,18S,C-5448
+2020FebruaryAustralia,,,,,,S-5448.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4154,S-5448.3:QG4154,0,Tamborine,yes,no,18S,C-5448
+2020FebruaryAustralia,,,,,,S-5449.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,strain lost before it was frozen,,,1,Tamborine,yes,no,18S,C-5449
+2020FebruaryAustralia,,,,,,S-5449.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4156,S-5449.3:QG4156,0,Tamborine,yes,no,18S,C-5449
+2020FebruaryAustralia,,,,,,S-5450.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4157,S-5450.1:QG4157,0,Tamborine,yes,yes,18S and test cross,C-5450
+2020FebruaryAustralia,,,,,,S-5451.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4158,S-5451.1:QG4158,0,Tamborine,yes,yes,18S and test cross,C-5451
+2020FebruaryAustralia,,,,,,S-5451.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4159,S-5451.2:QG4159,0,Tamborine,yes,yes,18S and test cross,C-5451
+2020FebruaryAustralia,,,,,,S-5451.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4160,S-5451.3:QG4160,0,Tamborine,yes,yes,18S and test cross,C-5451
+2020FebruaryAustralia,,,,,,S-5451.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4161,S-5451.4:QG4161,0,Tamborine,yes,yes,18S and test cross,C-5451
+2020FebruaryAustralia,,,,,,S-5451.5,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4162,S-5451.5:QG4162,0,Tamborine,no,yes,test cross,C-5451
+2020FebruaryAustralia,,,,,,S-5451.6,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4163,S-5451.6:QG4163,0,Tamborine,yes,yes,18S and test cross,C-5451
+2020FebruaryAustralia,,,,,,S-5453.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4164,S-5453.1:QG4164,0,Tamborine,yes,no,18S,C-5453
+2020FebruaryAustralia,,,,,,S-5453.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4165,S-5453.2:QG4165,0,Tamborine,yes,no,18S,C-5453
+2020FebruaryAustralia,,,,,,S-5456.1a,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4226,S-5456.1a:QG4226,0,Tamborine,yes,yes,18S and test cross,C-5456
+2020FebruaryAustralia,,,,,,S-5456.1b,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,strain lost before it was frozen,,,1,Tamborine,yes,no,18S,C-5456
+2020FebruaryAustralia,,,,,,S-5456.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4166,S-5456.2:QG4166,0,Tamborine,yes,no,18S,C-5456
+2020FebruaryAustralia,,,,,,S-5456.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4167,S-5456.3:QG4167,0,Tamborine,yes,no,18S,C-5456
+2020FebruaryAustralia,,,,,,S-5457.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4168,S-5457.2:QG4168,0,Tamborine,yes,yes,18S and test cross,C-5457
+2020FebruaryAustralia,,,,,,S-5457.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4169,S-5457.3:QG4169,0,Tamborine,yes,yes,18S and test cross,C-5457
+2020FebruaryAustralia,,,,,,S-5459.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4170,S-5459.2:QG4170,0,Tamborine,yes,no,18S,C-5459
+2020FebruaryAustralia,,,,,,S-5459.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4171,S-5459.3:QG4171,0,Tamborine,yes,no,18S,C-5459
+2020FebruaryAustralia,,,,,,S-5460.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4172,S-5460.1:QG4172,0,Tamborine,yes,no,18S,C-5460
+2020FebruaryAustralia,,,,,,S-5460.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4173,S-5460.2:QG4173,0,Tamborine,yes,no,18S,C-5460
+2020FebruaryAustralia,,,,,,S-5461.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4174,S-5461.1:QG4174,0,Tamborine,yes,yes,18S and test cross,C-5461
+2020FebruaryAustralia,,,,,,S-5461.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4175,S-5461.2:QG4175,0,Tamborine,yes,no,18S,C-5461
+2020FebruaryAustralia,,,,,,S-5461.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4176,S-5461.3:QG4176,0,Tamborine,yes,no,18S,C-5461
+2020FebruaryAustralia,,,,,,S-5462.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4177,S-5462.1:QG4177,0,Tamborine,yes,yes,18S and test cross,C-5462
+2020FebruaryAustralia,,,,,,S-5468.1a,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4228,S-5468.1a:QG4228,0,Springbrook,yes,yes,18S and test cross,C-5468
+2020FebruaryAustralia,,,,,,S-5468.1b,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4229,S-5468.1b:QG4229,0,Springbrook,yes,yes,18S and test cross,C-5468
+2020FebruaryAustralia,,,,,,S-5490.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4178,S-5490.1:QG4178,0,Tamborine,yes,no,18S,C-5490
+2020FebruaryAustralia,,,,,,S-5490.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4179,S-5490.2:QG4179,0,Tamborine,yes,no,18S,C-5490
+2020FebruaryAustralia,,,,,,S-5490.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4180,S-5490.3:QG4180,0,Tamborine,yes,no,18S,C-5490
+2020FebruaryAustralia,,,,,,S-5492.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4181,S-5492.1:QG4181,0,Tamborine,yes,no,18S,C-5492
+2020FebruaryAustralia,,,,,,S-5492.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4182,S-5492.2:QG4182,0,Tamborine,yes,no,18S,C-5492
+2020FebruaryAustralia,,,,,,S-5492.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4183,S-5492.3:QG4183,0,Tamborine,yes,no,18S,C-5492
+2020FebruaryAustralia,,,,,,S-5492.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4184,S-5492.4:QG4184,0,Tamborine,yes,no,18S,C-5492
+2020FebruaryAustralia,,,,,,S-5492.5,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4185,S-5492.5:QG4185,0,Tamborine,yes,no,18S,C-5492
+2020FebruaryAustralia,,,,,,S-5492.6,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4186,S-5492.6:QG4186,0,Tamborine,yes,no,18S,C-5492
+2020FebruaryAustralia,,,,,,S-5496.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4187,S-5496.2:QG4187,0,Tamborine,yes,no,18S,C-5496
+2020FebruaryAustralia,,,,,,S-5496.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4188,S-5496.3:QG4188,0,Tamborine,yes,no,18S,C-5496
+2020FebruaryAustralia,,,,,,S-5497.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4189,S-5497.1:QG4189,0,Tamborine,yes,no,18S,C-5497
+2020FebruaryAustralia,,,,,,S-5497.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4190,S-5497.2:QG4190,0,Tamborine,yes,no,18S,C-5497
+2020FebruaryAustralia,,,,,,S-5497.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4191,S-5497.3:QG4191,0,Tamborine,yes,no,18S,C-5497
+2020FebruaryAustralia,,,,,,S-5497.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4192,S-5497.4:QG4192,0,Tamborine,yes,no,18S,C-5497
+2020FebruaryAustralia,,,,,,S-5498.1,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4193,S-5498.1:QG4193,0,Tamborine,no,yes,test cross,C-5498
+2020FebruaryAustralia,,,,,,S-5498.2,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. elegans,,1,,QG4194,S-5498.2:QG4194,0,Tamborine,no,yes,test cross,C-5498
+2020FebruaryAustralia,,,,,,S-5508.1a,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4230,S-5508.1a:QG4230,0,Springbrook,yes,no,18S,C-5508
+2020FebruaryAustralia,,,,,,S-5508.3,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4195,S-5508.3:QG4195,0,Springbrook,no,yes,test cross,C-5508
+2020FebruaryAustralia,,,,,,S-5511.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4196,S-5511.1:QG4196,0,Tamborine,yes,no,18S,C-5511
+2020FebruaryAustralia,,,,,,S-5511.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,strain lost before it was frozen,,,1,Tamborine,yes,no,18S,C-5511
+2020FebruaryAustralia,,,,,,S-5511.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4198,S-5511.4:QG4198,0,Tamborine,yes,no,18S,C-5511
+2020FebruaryAustralia,,,,,,S-5512.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4199,S-5512.2:QG4199,0,Tamborine,yes,yes,18S and test cross,C-5512
+2020FebruaryAustralia,,,,,,S-5512.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4200,S-5512.3:QG4200,0,Tamborine,yes,yes,18S and test cross,C-5512
+2020FebruaryAustralia,,,,,,S-5512.4,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4201,S-5512.4:QG4201,0,Tamborine,yes,no,18S,C-5512
+2020FebruaryAustralia,,,,,,S-5512.5,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4202,S-5512.5:QG4202,0,Tamborine,no,yes,test cross,C-5512
+2020FebruaryAustralia,,,,,,S-5512.6,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4203,S-5512.6:QG4203,0,Tamborine,yes,yes,18S and test cross,C-5512
+2020FebruaryAustralia,,,,,,S-5514.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4204,S-5514.1:QG4204,0,Tamborine,yes,no,18S,C-5514
+2020FebruaryAustralia,,,,,,S-5514.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4205,S-5514.2:QG4205,0,Tamborine,yes,no,18S,C-5514
+2020FebruaryAustralia,,,,,,S-5609.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4206,S-5609.1:QG4206,0,Eungella,yes,no,18S,C-5609
+2020FebruaryAustralia,,,,,,S-5609.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4207,S-5609.2:QG4207,0,Eungella,yes,no,18S,C-5609
+2020FebruaryAustralia,,,,,,S-5609.3,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4208,S-5609.3:QG4208,0,Eungella,yes,no,18S,C-5609
+2020FebruaryAustralia,,,,,,S-5609.4,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4209,S-5609.4:QG4209,0,Eungella,yes,no,18S,C-5609
+2020FebruaryAustralia,,,,,,S-5609.5,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4210,S-5609.5:QG4210,0,Eungella,yes,no,18S,C-5609
+2020FebruaryAustralia,,,,,,S-5609.6,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4211,S-5609.6:QG4211,0,Eungella,yes,no,18S,C-5609
+2020FebruaryAustralia,,,,,,S-5612.1,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4212,S-5612.1:QG4212,0,Eungella,yes,no,18S,C-5612
+2020FebruaryAustralia,,,,,,S-5612.2,,,,1,,,,,,,,,,,1,,,,,,,frozen without bleaching,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4213,S-5612.2:QG4213,0,Eungella,yes,no,18S,C-5612
+2020FebruaryAustralia,,,,,,S-5615.4,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. briggsae,,1,,QG4214,S-5615.4:QG4214,0,Eungella,no,yes,test cross,C-5615
+2020FebruaryAustralia,,,,,,S-5628.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. n. sp,1,1,,QG4215,S-5628.1:QG4215,0,Paluma,yes,no,18S,C-5628
+2020FebruaryAustralia,,,,,,S-5628.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. n. sp,1,1,strain lost before it was frozen,,,1,Paluma,yes,no,18S,C-5628
+2020FebruaryAustralia,,,,,,S-5628.3,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. n. sp,1,1,strain lost before it was frozen,,,1,Paluma,yes,no,18S,C-5628
+2020FebruaryAustralia,,,,,,S-5695.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4218,S-5695.1:QG4218,0,Imbil,yes,yes,18S and test cross,C-5695
+2020FebruaryAustralia,,,,,,S-5695.2,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4219,S-5695.2:QG4219,0,Imbil,yes,yes,18S and test cross,C-5695
+2020FebruaryAustralia,,,,,,S-5703.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4220,S-5703.1:QG4220,0,The Palms,yes,no,18S,C-5703
+2020FebruaryAustralia,,,,,,S-5703.2,,,,1,,,,,,,,,,,,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4221,S-5703.2:QG4221,0,The Palms,no,yes,test cross,C-5703
+2020FebruaryAustralia,,,,,,S-5715.1,,,,1,,,,,,,,,,,1,,,,,,,,,,"isolated, genotyped, BLASTed by Rockman lab",C. tribulationis,,,,QG4222,S-5715.1:QG4222,0,The Palms,yes,no,18S,C-5715

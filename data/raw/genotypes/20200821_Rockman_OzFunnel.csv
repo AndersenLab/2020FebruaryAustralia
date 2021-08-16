@@ -1,0 +1,232 @@
+strain,species,strain_lost,s_label,species2,location,spid_18s,spid_testcross,bleach_status
+QG4003,C. elegans,0,C-5162.1, C. elegans, Bunya Mtns, yes, no, frozen without bleaching
+QG4004,C. elegans,0,C-5177.1, C. elegans, Bunya Mtns, no, yes,
+QG4005,C. elegans,0,C-5177.2, C. elegans, Bunya Mtns, yes, yes,
+QG4006,C. elegans,0,C-5177.3, C. elegans, Bunya Mtns, no, yes, frozen without bleaching
+QG4007,C. elegans,0,C-5177.4, C. elegans, Bunya Mtns, yes, no,
+QG4008,C. elegans,0,C-5177.5, C. elegans, Bunya Mtns, no, yes,
+QG4009,C. elegans,0,C-5177.6, C. elegans, Bunya Mtns, yes, no,
+QG4010,C. elegans,0,C-5185.2, C. elegans, Tamborine, yes, yes,
+QG4011,C. elegans,0,C-5185.3, C. elegans, Tamborine, yes, yes,
+QG4012,C. elegans,0,C-5185.4, C. elegans, Tamborine, yes, yes,
+QG4013,C. elegans - lost,1,C-5185.5, C. elegans, Tamborine, yes, no,
+QG4014,C. elegans,0,C-5185.6, C. elegans, Tamborine, no, yes,
+QG4015,C. elegans,0,C-5186.1, C. elegans, Tamborine, yes, yes,
+QG4016,C. elegans,0,C-5186.2, C. elegans, Tamborine, yes, yes,
+QG4017,C. elegans,0,C-5186.3, C. elegans, Tamborine, yes, yes,
+QG4018,C. elegans,0,C-5186.4, C. elegans, Tamborine, yes, yes,
+QG4019,C. elegans,0,C-5186.5, C. elegans, Tamborine, yes, yes,
+QG4020,C. tribulationis,0,C-5187.1, C. tribulationis, Tamborine, yes, no,
+QG4021,C. elegans,0,C-5187.2, C. elegans, Tamborine, yes, no,
+QG4022,C. tribulationis,0,C-5187.3, C. tribulationis, Tamborine, yes, no,
+QG4023,C. tribulationis,0,C-5207.1, C. tribulationis, Imbil, yes, yes,
+QG4024,C. tribulationis,0,C-5207.2, C. tribulationis, Imbil, yes, no,
+QG4025,C. tribulationis,0,C-5213, C. tribulationis, The Palms, yes, yes,
+QG4026,C. briggsae,0,C-5250.1, C. briggsae, Woondum, yes, no, frozen without bleaching
+QG4027,C. briggsae,0,C-5250.2, C. briggsae, Woondum, yes, no, frozen without bleaching
+QG4028,C. briggsae,0,C-5250.3, C. briggsae, Woondum, yes, no, frozen without bleaching
+QG4029,C. briggsae,0,C-5250.4, C. briggsae, Woondum, yes, no, frozen without bleaching
+QG4030,C. briggsae,0,C-5250.5, C. briggsae, Woondum, yes, no, frozen without bleaching
+QG4031,C. briggsae,0,C-5250.6, C. briggsae, Woondum, yes, no, frozen without bleaching
+QG4032,C. tribulationis,0,C-5254.1, C. tribulationis, Amamoor, yes, no, frozen without bleaching
+QG4033,C. tribulationis,0,C-5295.1, C. tribulationis, Bartle Frere, yes, yes,
+QG4034,C. tribulationis,0,C-5295.2, C. tribulationis, Bartle Frere, yes, yes,
+QG4035,C. tribulationis,0,C-5295.3, C. tribulationis, Bartle Frere, yes, yes,
+QG4036,C. tribulationis,0,C-5297.1, C. tribulationis, Herberton, yes, no,
+QG4037,C. tribulationis,0,C-5297.2, C. tribulationis, Herberton, yes, no,
+QG4038,C. tribulationis,0,C-5297.3, C. tribulationis, Herberton, yes, no,
+QG4039,C. tribulationis,0,C-5297.4, C. tribulationis, Herberton, yes, no, frozen without bleaching
+QG4040,C. tribulationis,0,C-5297.5, C. tribulationis, Herberton, no, yes,
+QG4041,C. tribulationis,0,C-5303.1, C. tribulationis, Herberton, yes, no,
+QG4042,C. tribulationis,0,C-5303.2, C. tribulationis, Herberton, yes, no,
+QG4043,C. tribulationis,0,C-5303.3, C. tribulationis, Herberton, yes, yes,
+QG4044,C. tribulationis,0,C-5316.1, C. tribulationis, Bartle Frere, yes, yes,
+QG4045,C. tribulationis,0,C-5321.1, C. tribulationis, Bartle Frere, yes, no,
+QG4046,C. tribulationis,0,C-5321.2, C. tribulationis, Bartle Frere, yes, no,
+QG4047,C. tribulationis,0,C-5321.3, C. tribulationis, Bartle Frere, yes, no,
+QG4048,C. tribulationis,0,C-5322.1, C. tribulationis, Bartle Frere, yes, yes,
+QG4049,C. tribulationis,0,C-5322.2, C. tribulationis, Bartle Frere, yes, yes,
+QG4050,C. tribulationis,0,C-5322.3, C. tribulationis, Bartle Frere, yes, yes,
+QG4051,C. tribulationis,0,C-5323.3, C. tribulationis, Bartle Frere, yes, yes,
+QG4052,C. tribulationis,0,C-5324.1, C. tribulationis, Bartle Frere, yes, yes,
+QG4053,C. tribulationis,0,C-5324.2, C. tribulationis, Bartle Frere, yes, yes,
+QG4054,C. tribulationis,0,C-5324.3, C. tribulationis, Bartle Frere, no, yes,
+QG4055,C. tribulationis,0,C-5324.5, C. tribulationis, Bartle Frere, yes, no,
+QG4056,C. tribulationis,0,C-5341.1, C. tribulationis, Eungella, yes, no, frozen without bleaching
+QG4057,C. tribulationis - lost,1,C-5341.2, C. tribulationis, Eungella, yes, no,
+QG4058,C. briggsae,0,C-5341.3, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4059,C. briggsae,0,C-5344.1, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4060,C. briggsae - lost,1,C-5344.2, C. briggsae, Eungella, yes, no,
+QG4061,C. briggsae,0,C-5344.3, C. briggsae, Eungella, yes, no,
+QG4062,C. briggsae,0,C-5344.4, C. briggsae, Eungella, yes, no,
+QG4063,C. briggsae,0,C-5344.5, C. briggsae, Eungella, yes, yes,
+QG4064,C. briggsae,0,C-5345.1, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4065,C. briggsae,0,C-5345.2, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4066,C. TBD,0,C-5345.3, C. TBD, Eungella, no, no, frozen without bleaching
+QG4067,C. briggsae,0,C-5345.4, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4068,C. briggsae,0,C-5345.5, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4069,C. briggsae,0,C-5345.6, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4070,C. briggsae,0,C-5346.1, C. briggsae, Eungella, yes, no,
+QG4071,C. briggsae,0,C-5346.2, C. briggsae, Eungella, no, yes,
+QG4072,C. briggsae,0,C-5346.3, C. briggsae, Eungella, no, yes,
+QG4073,C. briggsae,0,C-5346.4, C. briggsae, Eungella, yes, no,
+QG4074,C. briggsae,0,C-5346.5, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4075,C. briggsae,0,C-5346.6, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4076,C. elegans,0,C-5363.1, C. elegans, Kroombit Tops, yes, yes,
+QG4077,C. elegans,0,C-5363.2, C. elegans, Kroombit Tops, yes, yes,
+QG4078,C. elegans,0,C-5363.3, C. elegans, Kroombit Tops, yes, yes,
+QG4079,C. elegans,0,C-5363.5, C. elegans, Kroombit Tops, yes, no,
+QG4080,C. elegans,0,C-5363.6, C. elegans, Kroombit Tops, yes, no,
+QG4081,C. tribulationis,0,C-5367.1, C. tribulationis, Mt. Lewis, yes, yes,
+QG4082,C. tribulationis,0,C-5367.2, C. tribulationis, Mt. Lewis, yes, yes,
+QG4083,C. tribulationis,0,C-5367.3, C. tribulationis, Mt. Lewis, yes, yes,
+QG4084,C. tribulationis,0,C-5368.1, C. tribulationis, Mt. Lewis, yes, yes,
+QG4085,C. tribulationis,0,C-5368.2, C. tribulationis, Mt. Lewis, yes, yes,
+QG4086,C. tribulationis,0,C-5368.3, C. tribulationis, Mt. Lewis, yes, yes,
+QG4087,C. tribulationis,0,C-5374.1, C. tribulationis, Mt. Lewis, yes, yes,
+QG4088,C. tribulationis,0,C-5374.2, C. tribulationis, Mt. Lewis, yes, yes,
+QG4089,C. tribulationis,0,C-5374.3, C. tribulationis, Mt. Lewis, yes, yes,
+QG4090,C. tribulationis,0,C-5379.1, C. tribulationis, Mt. Lewis, yes, yes,
+QG4091,C. tribulationis,0,C-5379.2, C. tribulationis, Mt. Lewis, yes, yes,
+QG4092,C. tribulationis,0,C-5413.1, C. tribulationis, Bartle Frere, yes, yes,
+QG4093,C. briggsae,0,C-5415.1, C. briggsae, Eungella, yes, no,
+QG4094,C. briggsae,0,C-5415.2, C. briggsae, Eungella, yes, no,
+QG4095,C. briggsae,0,C-5415.3, C. briggsae, Eungella, yes, no,
+QG4232,C. briggsae,0,C-5415.5, C. briggsae, Eungella, no, yes,
+QG4233,C. briggsae,0,C-5415.6, C. briggsae, Eungella, no, yes,
+QG4096,C. briggsae,0,C-5420.1, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4097,C. briggsae,0,C-5420.2, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4098,C. TBD,0,C-5420.3, C. TBD, Eungella, no, no, frozen without bleaching
+QG4099,C. TBD,0,C-5420.4, C. TBD, Eungella, no, no, frozen without bleaching
+QG4100,C. briggsae,0,C-5420.5, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4101,C. TBD,0,C-5420.6, C. TBD, Eungella, no, no, frozen without bleaching
+QG4102,C. tribulationis,0,C-5421.1, C. tribulationis, Eungella, yes, yes,
+QG4103,C. elegans,0,C-5421.2, C. elegans, Eungella, yes, yes,
+QG4104,C. briggsae,0,C-5421.3, C. briggsae, Eungella, yes, yes,
+QG4223,C. tribulationis,0,C-5421.4a, C. tribulationis, Eungella, yes, yes,
+QG4224,C. tribulationis,0,C-5421.4b, C. tribulationis, Eungella, yes, yes,
+QG4105,C. tribulationis,0,C-5421.5, C. tribulationis, Eungella, yes, yes,
+QG4106,C. tribulationis,0,C-5421.6, C. tribulationis, Eungella, yes, yes,
+QG4107,C. tribulationis,0,C-5423.2, C. tribulationis, Eungella, no, yes,
+QG4108,C. tribulationis,0,C-5423.3, C. tribulationis, Eungella, yes, yes,
+QG4109,C. tribulationis,0,C-5423.4, C. tribulationis, Eungella, yes, yes,
+QG4110,C. tribulationis,0,C-5423.5, C. tribulationis, Eungella, yes, yes,
+QG4111,C. tribulationis,0,C-5423.6, C. tribulationis, Eungella, yes, yes,
+QG4112,C. herm sp. TBD. Cross with Cbr failed,0,C-5425.1,C. TBD, Eungella, no, no,
+QG4113,C. herm sp. TBD. Cross with Cbr failed,0,C-5425.2,C. TBD, Eungella, no, no,
+QG4114,C. briggsae,0,C-5425.3, C. briggsae, Eungella, no, yes,
+QG4115,C. briggsae,0,C-5425.4, C. briggsae, Eungella, yes, no,
+QG4116,C. briggsae,0,C-5425.5, C. briggsae, Eungella, no, yes,
+QG4117,C. briggsae,0,C-5425.6, C. briggsae, Eungella, no, yes,
+QG4118,C. TBD,0,C-5432.1, C. TBD, Eungella, no, no, frozen without bleaching
+QG4119,C. briggsae,0,C-5432.2, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4120,C. TBD,0,C-5432.3, C. TBD, Eungella, no, no, frozen without bleaching
+QG4121,C. TBD,0,C-5432.4, C. TBD, Eungella, no, no, frozen without bleaching
+QG4122,C. TBD,0,C-5432.5, C. TBD, Eungella, no, no, frozen without bleaching
+QG4123,C. briggsae,0,C-5432.6, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4124,C. tribulationis,0,C-5437.1, C. tribulationis, Eungella, no, yes,
+QG4225,C. briggsae,0,C-5437.2a, C. briggsae, Eungella, yes, yes,
+QG4231,C. briggsae,0,C-5437.2b, C. briggsae, Eungella, no, yes,
+QG4125,C. tribulationis,0,C-5437.3, C. tribulationis, Eungella, yes, yes,
+QG4126,C. tribulationis,0,C-5437.4, C. tribulationis, Eungella, yes, yes,
+QG4127,C. tribulationis,0,C-5437.5, C. tribulationis, Eungella, yes, no,
+QG4128,C. briggsae,0,C-5439.1, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4129,C. briggsae,0,C-5439.2, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4130,C. briggsae,0,C-5439.3, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4131,C. briggsae,0,C-5439.4, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4132,C. briggsae,0,C-5439.5, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4133,C. briggsae,0,C-5439.6, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4134,C. elegans,0,C-5441.1, C. elegans, Tamborine, yes, yes,
+QG4135,C. elegans,0,C-5441.2, C. elegans, Tamborine, yes, yes,
+QG4136,C. tribulationis - lost,1,C-5442.1, C. tribulationis, Tamborine, yes, no,
+QG4137,C. elegans,0,C-5442.2, C. elegans, Tamborine, yes, no, frozen without bleaching
+QG4138,C. elegans,0,C-5442.3, C. elegans, Tamborine, yes, no, frozen without bleaching
+QG4139,C. elegans,0,C-5442.4, C. elegans, Tamborine, yes, no, frozen without bleaching
+QG4140,C. tribulationis,0,C-5442.5, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4141,C. tribulationis,0,C-5442.6, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4142,C. tribulationis - lost,1,C-5443.2, C. tribulationis, Tamborine, yes, no,
+QG4143,C. tribulationis,0,C-5443.3, C. tribulationis, Tamborine, yes, no,
+QG4144,C. tribulationis,0,C-5444.1, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4145,C. tribulationis,0,C-5444.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4146,C. TBD,0,C-5446.1, C. TBD, Tamborine, no, no, frozen without bleaching
+QG4147,C. TBD,0,C-5446.2, C. TBD, Tamborine, no, no,
+QG4148,C. TBD - lost,1,C-5446.3, C. TBD, Tamborine, no, no,
+QG4149,C. tribulationis,0,C-5447.1, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4150,C. tribulationis,0,C-5447.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4151,C. elegans,0,C-5447.3, C. elegans, Tamborine, no, yes,
+QG4152,C. tribulationis,0,C-5447.4, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4153,C. tribulationis,0,C-5448.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4154,C. tribulationis,0,C-5448.3, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4155,C. tribulationis - lost,1,C-5449.2, C. tribulationis, Tamborine, yes, no,
+QG4156,C. tribulationis,0,C-5449.3, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4157,C. tribulationis,0,C-5450.1, C. tribulationis, Tamborine, yes, yes,
+QG4158,C. elegans,0,C-5451.1, C. elegans, Tamborine, yes, yes,
+QG4159,C. elegans,0,C-5451.2, C. elegans, Tamborine, yes, yes,
+QG4160,C. elegans,0,C-5451.3, C. elegans, Tamborine, yes, yes,
+QG4161,C. elegans,0,C-5451.4, C. elegans, Tamborine, yes, yes,
+QG4162,C. elegans,0,C-5451.5, C. elegans, Tamborine, no, yes,
+QG4163,C. elegans,0,C-5451.6, C. elegans, Tamborine, yes, yes,
+QG4164,C. tribulationis,0,C-5453.1, C. tribulationis, Tamborine, yes, no,
+QG4165,C. tribulationis,0,C-5453.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4226,C. elegans,0,C-5456.1a, C. elegans, Tamborine, yes, yes,
+QG4227,C. tribulationis - lost,1,C-5456.1b, C. tribulationis, Tamborine, yes, no,
+QG4166,C. elegans,0,C-5456.2, C. elegans, Tamborine, yes, no, frozen without bleaching
+QG4167,C. tribulationis,0,C-5456.3, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4168,C. tribulationis,0,C-5457.2, C. tribulationis, Tamborine, yes, yes,
+QG4169,C. tribulationis,0,C-5457.3, C. tribulationis, Tamborine, yes, yes,
+QG4170,C. tribulationis,0,C-5459.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4171,C. tribulationis,0,C-5459.3, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4172,C. tribulationis,0,C-5460.1, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4173,C. tribulationis,0,C-5460.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4174,C. tribulationis,0,C-5461.1, C. tribulationis, Tamborine, yes, yes,
+QG4175,C. tribulationis,0,C-5461.2, C. tribulationis, Tamborine, yes, no,
+QG4176,C. tribulationis,0,C-5461.3, C. tribulationis, Tamborine, yes, no,
+QG4177,C. elegans,0,C-5462.1, C. elegans, Tamborine, yes, yes, frozen without bleaching
+QG4228,C. elegans,0,C-5468.1a, C. elegans, Springbrook, yes, yes,
+QG4229,C. tribulationis,0,C-5468.1b, C. tribulationis, Springbrook, yes, yes,
+QG4178,C. tribulationis,0,C-5490.1, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4179,C. tribulationis,0,C-5490.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4180,C. tribulationis,0,C-5490.3, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4181,C. tribulationis,0,C-5492.1, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4182,C. elegans,0,C-5492.2, C. elegans, Tamborine, yes, no, frozen without bleaching
+QG4183,C. tribulationis,0,C-5492.3, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4184,C. elegans,0,C-5492.4, C. elegans, Tamborine, yes, no, frozen without bleaching
+QG4185,C. elegans,0,C-5492.5, C. elegans, Tamborine, yes, no, frozen without bleaching
+QG4186,C. elegans,0,C-5492.6, C. elegans, Tamborine, yes, no, frozen without bleaching
+QG4187,C. tribulationis,0,C-5496.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4188,C. tribulationis,0,C-5496.3, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4189,C. tribulationis,0,C-5497.1, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4190,C. tribulationis,0,C-5497.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4191,C. tribulationis,0,C-5497.3, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4192,C. tribulationis,0,C-5497.4, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4193,C. elegans,0,C-5498.1, C. elegans, Tamborine, no, yes,
+QG4194,C. elegans,0,C-5498.2, C. elegans, Tamborine, no, yes,
+QG4230,C. tribulationis,0,C-5508.1a, C. tribulationis, Springbrook, yes, no, frozen without bleaching
+QG4195,C. tribulationis,0,C-5508.3, C. tribulationis, Springbrook, no, yes,
+QG4196,C. tribulationis,0,C-5511.1, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4197,C. tribulationis - lost,1,C-5511.3, C. tribulationis, Tamborine, yes, no,
+QG4198,C. tribulationis,0,C-5511.4, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4199,C. tribulationis,0,C-5512.2, C. tribulationis, Tamborine, yes, yes,
+QG4200,C. tribulationis,0,C-5512.3, C. tribulationis, Tamborine, yes, yes,
+QG4201,C. tribulationis,0,C-5512.4, C. tribulationis, Tamborine, yes, no,
+QG4202,C. tribulationis,0,C-5512.5, C. tribulationis, Tamborine, no, yes,
+QG4203,C. tribulationis,0,C-5512.6, C. tribulationis, Tamborine, yes, yes,
+QG4204,C. tribulationis,0,C-5514.1, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4205,C. tribulationis,0,C-5514.2, C. tribulationis, Tamborine, yes, no, frozen without bleaching
+QG4206,C. briggsae,0,C-5609.1, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4207,C. briggsae,0,C-5609.2, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4208,C. briggsae,0,C-5609.3, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4209,C. briggsae,0,C-5609.4, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4210,C. briggsae,0,C-5609.5, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4211,C. briggsae,0,C-5609.6, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4212,C. briggsae,0,C-5612.1, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4213,C. briggsae,0,C-5612.2, C. briggsae, Eungella, yes, no, frozen without bleaching
+QG4214,C. briggsae,0,C-5615.4, C. briggsae, Eungella, no, yes,
+QG4215,C. n. sp,0,C-5628.1, C. n. sp, Paluma, yes, no,
+QG4216,C. n. sp - lost,1,C-5628.2, C. n. sp, Paluma, yes, no,
+QG4217,C. n. sp - lost,1,C-5628.3, C. n. sp, Paluma, yes, no,
+QG4218,C. tribulationis,0,C-5695.1, C. tribulationis, Imbil, yes, yes,
+QG4219,C. tribulationis,0,C-5695.2, C. tribulationis, Imbil, yes, yes,
+QG4220,C. tribulationis,0,C-5703.1, C. tribulationis, The Palms, yes, no,
+QG4221,C. tribulationis,0,C-5703.2, C. tribulationis, The Palms, no, yes,
+QG4222,C. tribulationis,0,C-5715.1, C. tribulationis, The Palms, yes, no,
