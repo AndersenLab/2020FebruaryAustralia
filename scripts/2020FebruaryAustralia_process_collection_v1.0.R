@@ -185,7 +185,7 @@ joingeno_data2 <- joingeno_data %>%
 
 # test the procPhotos function, output is final dataframe. 
 final_data1 <- procPhotos(dir = "/Users/tim/repos/2020FebruaryAustralia", data = joingeno_data2, max_dim = 500, overwrite = T,
-                          pub_url = "https://storage.googleapis.com/elegansvariation.org/photos/isolation/fulcrum/2020FebruaryAustralia/sampling_thumbs/",
+                          pub_url = "https://storage.googleapis.com/elegansvariation.org/photos/isolation/fulcrum/",
                           CeNDR = TRUE)
 
 # remove the photos that are not C. elegans for now.
