@@ -1,7 +1,6 @@
 #devtools::install_github("AndersenLab/easyfulcrum")
 library(easyfulcrum)
 library(tidyverse)
-library(rebus)
 
 # Set working directory
 setwd(glue::glue("{dirname(rstudioapi::getActiveDocumentContext()$path)}/.."))
@@ -9,7 +8,8 @@ setwd(glue::glue("{dirname(rstudioapi::getActiveDocumentContext()$path)}/.."))
 #=====================================================#
 # PART 1: process Fulcrum data
 #=====================================================#
-raw_data <- easyfulcrum::readFulcrum('/Users/tim/repos/2020FebruaryAustralia')
+dir = getwd()
+raw_data <- easyfulcrum::readFulcrum(dir = dir)
 
 proc_data <- procFulcrum(raw_data)
 
@@ -83,7 +83,8 @@ join_data4 <- join_data3 %>%
   dplyr::mutate(collection_altitude = case_when(flag_collection_altitude_extreme == T ~ 0,
                                                 TRUE ~ collection_altitude), # set altitudes to 0
                 flag_collection_altitude_extreme = case_when(flag_collection_altitude_extreme == T ~ FALSE,
-                                                             TRUE ~ flag_collection_altitude_extreme)) # remove altitude flag
+                                                             TRUE ~ flag_collection_altitude_extreme),
+                substrate_other = as.character(substrate_other)) # remove altitude flag
 
 
 # Check the final joined data
@@ -184,9 +185,13 @@ joingeno_data2 <- joingeno_data %>%
   dplyr::filter(c_label != "C-5256") #remove C-5256 b/c 6 s-labels found in fulcrum but not in genotyping
 
 # test the procPhotos function, output is final dataframe. 
-final_data1 <- procPhotos(dir = "/Users/tim/repos/2020FebruaryAustralia", data = joingeno_data2, max_dim = 500, overwrite = T,
+final_data <- procPhotos2(dir = dir, data = joingeno_data2, max_dim = 500, overwrite = T,
                           pub_url = "https://storage.googleapis.com/elegansvariation.org/photos/isolation/fulcrum/",
-                          CeNDR = TRUE)
+                          CeaNDR = TRUE)
+
+# final_data1 <- procPhotos(dir = "/Users/tim/repos/2020FebruaryAustralia", data = joingeno_data2, max_dim = 500, overwrite = T,
+#                           pub_url = "https://storage.googleapis.com/elegansvariation.org/photos/isolation/fulcrum/",
+#                           CeNDR = TRUE)
 
 # remove the photos that are not C. elegans for now.
 # img_rm <- tibble(fs::dir_ls("data/processed/fulcrum/processed_photos", recurse = F, type = "file")) %>%
@@ -204,7 +209,7 @@ final_data1 <- procPhotos(dir = "/Users/tim/repos/2020FebruaryAustralia", data =
 # fs::file_delete(img_rm_thumbs$img_path)
 
 # make initial species sheet
-species_sheet1 <- makeSpSheet(final_data1, dir = "/Users/tim/repos/2020FebruaryAustralia")
+species_sheet1 <- makeSpSheet(final_data, dir = dir)
 
 # correct email addresses to Names
 species_sheet2 <- species_sheet1 %>%
@@ -236,7 +241,7 @@ current_date <- stringr::str_extract(Sys.time(), pattern = regex("^.{10}")) %>%
 rio::export(species_sheet2, glue::glue("reports/{current_date}_{unique(anno_data$project)}_species_sheet.csv"))
 
 # export final data
-saveRDS(final_data1, file = glue::glue("data/processed/fulcrum/{current_date}_{unique(anno_data$project)}.rds"))
+#saveRDS(final_data1, file = glue::glue("data/processed/fulcrum/{current_date}_{unique(anno_data$project)}.rds"))
 
 # make report
-generateReport(data = final_data1, dir = "~/repos/2020FebruaryAustralia", profile = "nematode")
+generateReport(data = final_data, dir = dir, profile = "nematode")
